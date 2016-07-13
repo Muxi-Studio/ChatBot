@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="UTF-8">
+        <title>Add Info</title>
+    </head>
+    <body>
+        <div>
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul class=flashes>
+                {% for message in messages %}
+                <li>{{ message }}</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+            {% endwith %}
+        </div>
+        <div>
+            <form action="" method="post">
+                <div>
+                    <label>tag(txt, pic, web)</label>
+                    <input name="tag">
+                </div>
+                <div>
+                    <label>index</label>
+                    <input name="index">
+                </div>
+                <div>
+                    <label>content</label>
+                    <input name="content">
+                </div>
+                <button type="submit">提交</button>
+            </form>
+        </div>
+    </body>
+</html>
