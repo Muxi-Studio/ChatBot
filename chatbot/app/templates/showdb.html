@@ -4,15 +4,11 @@
 </head>
 <body>
     <ul>
-        {% if adict %}
-            {% for i in adict %}
-            <li><b>tag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>{{ i['tag'] }}</li>
-            <span><b>index:&nbsp;&nbsp;&nbsp;</b>{{ i['index'] }}</span><br/>
-            <span><b>content: </b>{{ i['content'] }}</span>
-            </br></br>
-            {% endfor %}
-        {% else %}
-            <h3>暂时没有数据.....</h3>
-        {% endif %}
+        {% for i in adict %}
+        <li><b>tag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>{{ i['tag'] }}</li>
+        <span><b>index:&nbsp;&nbsp;&nbsp;</b>{{ i['index'] }}</span><br/>
+        <span><b>content: </b>{{ i['content'] }}</span>
+        </br></br>
+        {% endfor %}
     </ul>
 </body>
