@@ -54,7 +54,7 @@ def index():
                 for j in psegword:
                     if j.flag == 'ns' or j.flag == 'nt'  or j.flag == 'n'or j.flag == 'x':
                         keyword = j.word
-                break
+                        break
             else:
                 tag = 'unk'
         form.question.data = ''
