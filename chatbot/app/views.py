@@ -1,53 +1,61 @@
 # coding: utf-8
-from . import app, db
-from flask import render_template, redirect, flash, url_for, request
+from . import app, db, api
+from flask import render_template, redirect, url_for, request, session
+from flask import request, jsonify
+from forms import QuestionForm
+import jieba
+import jieba.analyse
+import jieba.posseg as pseg
+jieba.load_userdict("dic.txt")
 
-@app.route('/')
+@app.route('/', methods=['GET','POST'])
 def index():
-    return render_template('index.html')
-
-@app.route('/addinfo/', methods=['GET', 'POST'])
-def addinfo():
-    if request.method == 'POST':
-        in_tag = request.form.get('tag')
-        in_index = request.form.get('index')
-        in_content = request.form.get('content')
-        if (in_tag and in_index and in_content):
-            if in_tag == 'txt':
-                db.txt.insert({'tag': in_tag, 'index': in_index, 'content': in_content})
-            elif in_tag == 'pic':
-                db.pic.insert({tag: in_tag, index: in_index, url: in_content})
-            elif in_tag == 'web':
-                db.web.insert({tag: in_tag, index: in_index, url: in_content})
-            flash("数据已导入!")
-        else:
-            flash("输入完整信息!")
-        return redirect(url_for('addinfo'))
-    return render_template('addinfo.html')
-
-@app.route('/showtxt/')
-def showtxt():
-    adict = db.txt.find()
-    if adict.count():
-        name = 'txt'
-        return render_template('showdb.html', adict=adict, name=name)
-    else:
-        return '暂时没有数据...'
-
-@app.route('/showpic/')
-def showpic():
-    adict = db.pic.find()
-    if adict.count():
-        name = 'pic'
-        return render_template('showdb.html', adict=adict, name=name)
-    else:
-        return '暂时没有数据...'
-
-@app.route('/showweb/')
-def showweb():
-    adict = db.web.find()
-    if adict.count():
-        name = 'web'
-        return render_template('showdb.html', adict=adict, name=name)
-    else:
-        return '暂时没有数据...'
+    form = QuestionForm()
+    question = None
+    tag = None
+    center = None
+    keyword = None
+    keydict = {}
+    maplist = [u'在哪', u'哪儿', u'怎么走', u'怎么去', u'哪里']
+    weblist = [u'网址', u'网页']
+    txtlist = [u'通知', u'资料']
+    piclist = [u'照片', u'相片', u'图片']
+    if form.validate_on_submit():
+        question = form.question.data
+        keywords = jieba.analyse.extract_tags(question,10)
+        psegword = pseg.cut(question)
+        tag = 'unk'
+        for i in psegword:
+            keydict[i.word] = i.flag
+        for i in keywords:
+            if i in weblist:
+                tag = 'web'
+                del keydict[i]
+                for j in keydict:
+                    if j.flag == 'ns' or j.flag == 'nt' or j.flag == 'n' or j.flag == 'x':
+                        keyword = j.word
+                        break
+            elif i in piclist:
+                tag = 'pic'
+                del keydict[i]
+                for j in keydict:
+                    if j.flag == 'ns' or j.flag == 'nt' or j.flag == 'n' or j.flag == 'x':
+                        keyword = j.word
+                        break
+            elif i in maplist:
+                tag = 'map'
+                del keydict[i]
+                for j in psegword:
+                    if j.flag == 'ns' or j.flag == 'nt'  or j.flag == 'n'or j.flag == 'x':
+                        keyword = j.word
+                        break
+            elif i in txtlist:
+                tag = 'txt'
+                for j in psegword:
+                    if j.flag == 'ns' or j.flag == 'nt'  or j.flag == 'n'or j.flag == 'x':
+                        keyword = j.word
+                break
+            else:
+                tag = 'unk'
+        form.question.data = ''
+    return render_template('index.html', form=form, question=question, tag=tag, center=center, keyword=keyword)

@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <head>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
     <title>Index</title>
 </head>
 <body>
     <div>
-        <a href="{{ url_for('showtxt') }}">txt table</a>
+        {% if question %}{{ question }}{% else %}{% endif %}
     </div>
+    {% if tag == 'map' %}
+        <style type="text/css">
+        body, html,#allmap {width: 90%;height: 90%;margin:0;font-family:"微软雅黑";}
+        </style>
+        <div id="allmap"></div>
+        <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=iW9tLVSnsatY0oRFgDGn5NvxrZIke65b"></script>
+        <script type="text/javascript">
+    // 百度地图API功能
+            var map = new BMap.Map("allmap");  // 创建Map实例
+            map.centerAndZoom("{{ keyword }}",17);  // 初始化地图,用城市名设置地图中心点
+            map.Marker("{{ keyword }}");     
+        </script>
+    {% elif tag == 'txt' %}
+        <h1>txt</h1>
+    {% elif tag == 'web' %}
+        <h1>web url</h1>
+    {% elif tag == 'pic' %}
+        <h1>pitcure</h1>
+    {% elif tag == 'unk' %}
+        <img src="{{ url_for('static', filename='img.jpg') }}" />对不起，我不知道..你换个姿势再问一遍吧..
+    {% else %}{% endif %}
     <div>
-        <a href="{{ url_for('showpic') }}">pic table</a>
-    </div>
-    <div>
-        <a href="{{ url_for('showweb') }}">web table</a>
+        <form method="POST">
+            {{ form.hidden_tag() }}
+            {{ form.question() }}{{ form.send() }}
+        </form>
     </div>
 </body>
+</html>

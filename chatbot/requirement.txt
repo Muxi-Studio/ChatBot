@@ -2,3 +2,4 @@ Flask==0.11.1
 Flask-Admin==1.4.0
 pymongo==2.9
 flask-pymongo==0.4.1
+jieba
