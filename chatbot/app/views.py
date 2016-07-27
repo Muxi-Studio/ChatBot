@@ -13,7 +13,6 @@ def index():
     form = QuestionForm()
     question = None
     tag = None
-    center = None
     keyword = None
     keydict = {}
     maplist = [u'在哪', u'哪儿', u'怎么走', u'怎么去', u'哪里']
@@ -58,4 +57,4 @@ def index():
             else:
                 tag = 'unk'
         form.question.data = ''
-    return render_template('index.html', form=form, question=question, tag=tag, center=center, keyword=keyword)
+    return render_template('index.html', form=form, question=question, tag=tag, keyword=keyword)
