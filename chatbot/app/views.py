@@ -64,7 +64,7 @@ def index(question):
         elif i in txtlist:
             for j in keydict:
                 if keydict[j] == 'ns' or keydict[j] == 'nt'  or keydict[j] == 'n'or keydict[j] == 'x':
-                    keyword = j.word
+                    keyword = j
                     adict = db.txt.find({'index': keyword})
             for k in adict:
                 tag = k['tag']
