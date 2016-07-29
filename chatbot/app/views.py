@@ -31,28 +31,28 @@ def index():
                 tag = 'web'
                 del keydict[i]
                 for j in keydict:
-                    if j.flag == 'ns' or j.flag == 'nt' or j.flag == 'n' or j.flag == 'x':
-                        keyword = j.word
+                    if keydict[j] == 'ns' or keydict[j] == 'nt' or keydict[j] == 'n' or keydict[j] == 'x':
+                        keyword = j
                         break
             elif i in piclist:
                 tag = 'pic'
                 del keydict[i]
                 for j in keydict:
-                    if j.flag == 'ns' or j.flag == 'nt' or j.flag == 'n' or j.flag == 'x':
-                        keyword = j.word
+                    if keydict[j] == 'ns' or keydict[j] == 'nt' or keydict[j] == 'n' or keydict[j] == 'x':
+                        keyword = j
                         break
             elif i in maplist:
                 tag = 'map'
                 del keydict[i]
-                for j in psegword:
-                    if j.flag == 'ns' or j.flag == 'nt'  or j.flag == 'n'or j.flag == 'x':
-                        keyword = j.word
+                for j in keydict:
+                    if keydict[j] == 'ns' or keydict[j] == 'nt'  or keydict[j] == 'n'or keydict[j] == 'x':
+                        keyword = j
                         break
             elif i in txtlist:
                 tag = 'txt'
-                for j in psegword:
-                    if j.flag == 'ns' or j.flag == 'nt'  or j.flag == 'n'or j.flag == 'x':
-                        keyword = j.word
+                for j in keydict:
+                    if keydict[j] == 'ns' or keydict[j] == 'nt'  or keydict[j] == 'n'or keydict[j] == 'x':
+                        keyword = j
                         break
             else:
                 tag = 'unk'
