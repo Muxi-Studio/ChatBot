@@ -7,9 +7,17 @@ import jieba.analyse
 import jieba.posseg as pseg
 jieba.load_userdict("dic.txt")
 
+<<<<<<< HEAD
 @app.route('/<question>', methods=['GET','POST'])
 def index(question):
     tag = 'unk'
+=======
+@app.route('/', methods=['GET','POST'])
+def index():
+    form = QuestionForm()
+    question = None
+    tag = None
+>>>>>>> 623f3f12678c9a87c30026bae1c9fcbb161533b5
     keyword = None
     content = None
     keydict = {}
@@ -18,6 +26,7 @@ def index(question):
     weblist = [u'网址', u'网页']
     txtlist = [u'通知', u'资料']
     piclist = [u'照片', u'相片', u'图片']
+<<<<<<< HEAD
     keywords = jieba.analyse.extract_tags(question,10)
     psegword = pseg.cut(question)
     for n in psegword:
@@ -80,3 +89,44 @@ def index(question):
             'tag':'unk',
             'content':None
         })
+=======
+    if form.validate_on_submit():
+        question = form.question.data
+        keywords = jieba.analyse.extract_tags(question,10)
+        psegword = pseg.cut(question)
+        tag = 'unk'
+        for i in psegword:
+            keydict[i.word] = i.flag
+        for i in keywords:
+            if i in weblist:
+                tag = 'web'
+                del keydict[i]
+                for j in keydict:
+                    if keydict[j] == 'ns' or keydict[j] == 'nt' or keydict[j] == 'n' or keydict[j] == 'x':
+                        keyword = j
+                        break
+            elif i in piclist:
+                tag = 'pic'
+                del keydict[i]
+                for j in keydict:
+                    if keydict[j] == 'ns' or keydict[j] == 'nt' or keydict[j] == 'n' or keydict[j] == 'x':
+                        keyword = j
+                        break
+            elif i in maplist:
+                tag = 'map'
+                del keydict[i]
+                for j in keydict:
+                    if keydict[j] == 'ns' or keydict[j] == 'nt'  or keydict[j] == 'n'or keydict[j] == 'x':
+                        keyword = j
+                        break
+            elif i in txtlist:
+                tag = 'txt'
+                for j in keydict:
+                    if keydict[j] == 'ns' or keydict[j] == 'nt'  or keydict[j] == 'n'or keydict[j] == 'x':
+                        keyword = j
+                        break
+            else:
+                tag = 'unk'
+        form.question.data = ''
+    return render_template('index.html', form=form, question=question, tag=tag, keyword=keyword)
+>>>>>>> 623f3f12678c9a87c30026bae1c9fcbb161533b5
