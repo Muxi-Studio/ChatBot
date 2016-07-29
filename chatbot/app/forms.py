@@ -1,9 +1,5 @@
 # coding: utf-8
 from flask_wtf import Form
-from wtforms import SubmitField, TextField
-from wtforms.validators import Required
+# from wtforms import
+# from wtforms.validators import
 
-
-class QuestionForm(Form):
-	question = TextField('Question', validators=[Required()])
-	send = SubmitField('Send')
