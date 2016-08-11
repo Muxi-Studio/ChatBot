@@ -8,8 +8,7 @@
 </head>
 <body>
 	<div class="top"></div>
-	<app></app>
-	<div class="content" v-el:content>
+	<div class="content" v-el:content v-cloak>
 		<div class="chatbot">
 			<div class="img"></div>
 			<div class="bubble">
@@ -61,7 +60,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="input">
+	<div class="input" v-cloak>
 		<input type="text" name="text" placeholder="你想知道什么？" v-model="ques">
 		<button @click="ask"></button>
 	</div>
