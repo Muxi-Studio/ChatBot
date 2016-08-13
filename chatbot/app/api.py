@@ -34,6 +34,7 @@ def getcontent(text):
                     if keydict[j] == 'ns' or keydict[j] == 'nt' or keydict[j] == 'n' or keydict[j] == 'nr':
                         keyword = j
                         adict = db.web.find({'index':keyword})
+                        break
                 for k in adict:
                     tag = k['tag']
                     content = k['content']
@@ -49,6 +50,7 @@ def getcontent(text):
                     if keydict[j] == 'ns' or keydict[j] == 'nt' or keydict[j] == 'n' or keydict[j] == 'nr':
                         keyword = j
                         adict = db.pic.find({'index': keyword})
+                        break
                 for k in adict:
                     tag = k['tag']
                     content = k['content']
@@ -75,6 +77,7 @@ def getcontent(text):
                 if keydict[j] == 'ns' or keydict[j] == 'nt'  or keydict[j] == 'n' or keydict[j] == 'nr':
                     keyword = j
                     adict = db.txt.find({'index': keyword})
+                    break
             if adict == {}:
                 adict = db.txt.find({'index': text})
             for k in adict:
