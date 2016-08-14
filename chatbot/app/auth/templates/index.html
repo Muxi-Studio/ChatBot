@@ -1,0 +1,31 @@
+<!DOCTYPE>
+<html lang="zh-cn">
+    <head>
+        <meta charset="UTF-8">
+        <title>Chabot Manage Platform</title>
+    </head>
+    <body>
+        <h1>All The Collections:</h1>
+        {% for collection in collections %}
+            {% if collection != 'system.indexes' %}
+            <div>
+                <a href="{{ url_for('auth.showcollection', collection=collection) }}">
+                    {{ collection }}
+                </a>
+            </div>
+            {% endif %}
+        {% endfor %}
+        <div>
+            <a href="{{ url_for('auth.addinfo') }}">Add Information</a>
+        </div>
+        <div>
+            <a href="{{ url_for('auth.rminfo') }}">Remove Information</a>
+        </div>
+        <div>
+            <a href="{{ url_for('auth.rmcollection') }}">Remove Collection</a>
+        </div>
+        <div>
+            <a href="{{ url_for('auth.addtodic') }}">Add to Dic</a>
+        </div>
+    </body>
+</html>

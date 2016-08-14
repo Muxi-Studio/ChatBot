@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="UTF-8">
+        <title>Remove Collection</title>
+    </head>
+    <body>
+        <h1>Remove Collection</h1>
+        <div>
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul class=flashes>
+                {% for message in messages %}
+                <li>{{ message }}</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+            {% endwith %}
+        </div>
+        <div>
+            <form action="" method="post">
+                <div>
+                    Existed collections:
+                        {% for collection in collections %}
+                            {% if collection != 'system.indexes' %}
+                            <div>
+                                {{ collection }}&nbsp;
+                            </div>
+                            {% endif %}
+                        {% endfor %}
+                </div>
+                <div>
+                    <label>You wan't to drop:</label>
+                    <input name="rm_collection">
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>

@@ -17,4 +17,8 @@ host = os.environ.get('MONGODB_URL')
 conn = Connection(host=host,port=27017)
 db = conn.chatbot
 
-from . import views, forms
+from . import views
+
+# Register Blueprint
+from auth import auth
+app.register_blueprint(auth, url_prefix='/auth')

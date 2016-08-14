@@ -80,6 +80,8 @@ def getcontent(text):
                     keyword = j
                     adict = db.txt.find({'index': keyword})
                     break
+            if adict == {}:
+                adict = db.txt.find({'index': text})
             for k in adict:
                 tag = k['tag']
                 content = k['content']
@@ -87,18 +89,17 @@ def getcontent(text):
                     'tag':tag,
                     'content':content
                 })
-    return chat(text) 
-
-@app.route('/chat/<text>', methods=['GET', 'POST'])
-def chat(text):
-    text = urllib.quote(text.encode('utf8'))
-    url = 'http://www.tuling123.com/openapi/api?key=05f603714dd44697b554e31d152c1118&info=' + text
-    dictHtml = urllib.urlopen(url)
-    dictHtml1 = dictHtml.read()
-    dictJSON = json.loads(dictHtml1)
-    content = dictJSON['text']
-    tag = 'txt'
+    if keywords == []:
+        adict = db.txt.find({'index': text})
+        for k in adict:
+            tag = k['tag']
+            content = k['content']
+            return jsonify({
+                'tag':tag,
+                'content':content
+            })
     return jsonify({
-        'tag':tag,
-        'content':content
-    })  
+        'tag':'unk',
+        'content':None
+    })
+
