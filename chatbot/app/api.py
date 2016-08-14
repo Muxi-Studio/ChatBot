@@ -5,10 +5,10 @@ import re
 import jieba
 import jieba.analyse
 import jieba.posseg
-jieba.load_userdict("dic.txt")
 import urllib2
 import urllib
 import json
+jieba.load_userdict("dic.txt")
 
 @app.route('/<text>', methods=['GET','POST'])
 def getcontent(text):
