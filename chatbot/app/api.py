@@ -1,12 +1,14 @@
-#coding: utf-8
+# coding: utf-8
 from . import app, db
-from flask import Flask, jsonify
+from flask import Flask, jsonify, redirect, url_for
 import re
 import jieba
 import jieba.analyse
 import jieba.posseg
 jieba.load_userdict("dic.txt")
-
+import urllib2
+import urllib
+import json
 
 @app.route('/<text>', methods=['GET','POST'])
 def getcontent(text):
@@ -34,6 +36,7 @@ def getcontent(text):
                     if keydict[j] == 'ns' or keydict[j] == 'nt' or keydict[j] == 'n' or keydict[j] == 'nr':
                         keyword = j
                         adict = db.web.find({'index':keyword})
+                        break
                 for k in adict:
                     tag = k['tag']
                     content = k['content']
@@ -49,6 +52,7 @@ def getcontent(text):
                     if keydict[j] == 'ns' or keydict[j] == 'nt' or keydict[j] == 'n' or keydict[j] == 'nr':
                         keyword = j
                         adict = db.pic.find({'index': keyword})
+                        break
                 for k in adict:
                     tag = k['tag']
                     content = k['content']
@@ -75,8 +79,7 @@ def getcontent(text):
                 if keydict[j] == 'ns' or keydict[j] == 'nt'  or keydict[j] == 'n' or keydict[j] == 'nr':
                     keyword = j
                     adict = db.txt.find({'index': keyword})
-            if adict == {}:
-                adict = db.txt.find({'index': text})
+                    break
             for k in adict:
                 tag = k['tag']
                 content = k['content']
@@ -84,16 +87,18 @@ def getcontent(text):
                     'tag':tag,
                     'content':content
                 })
-    if keywords == []:
-        adict = db.txt.find({'index': text})
-        for k in adict:
-            tag = k['tag']
-            content = k['content']
-            return jsonify({
-                'tag':tag,
-                'content':content
-            })
+    return chat(text) 
+
+@app.route('/chat/<text>', methods=['GET', 'POST'])
+def chat(text):
+    text = urllib.quote(text.encode('utf8'))
+    url = 'http://www.tuling123.com/openapi/api?key=05f603714dd44697b554e31d152c1118&info=' + text
+    dictHtml = urllib.urlopen(url)
+    dictHtml1 = dictHtml.read()
+    dictJSON = json.loads(dictHtml1)
+    content = dictJSON['text']
+    tag = 'txt'
     return jsonify({
-        'tag':'unk',
-        'content':None
-    })
+        'tag':tag,
+        'content':content
+    })  
