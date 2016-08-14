@@ -87,6 +87,14 @@ def getcontent(text):
                     'tag':tag,
                     'content':content
                 })
+    adict = db.txt.find({'index': text})
+    for k in adict:
+        tag = k['tag']
+        content = k['content']
+        return jsonify({
+            'tag':tag,
+            'content':content
+        })
     return chat(text) 
 
 @app.route('/chat/<text>', methods=['GET', 'POST'])
