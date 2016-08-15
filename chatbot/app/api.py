@@ -63,6 +63,9 @@ def getcontent(text):
         for i in maplist:
             if i in keywords:
                 tag = 'map'
+                for k in keywords:
+                    if k == '华中师范大学':
+                        del keydict[k]
                 for j in keydict:
                     if keydict[j] == 'ns' or keydict[j] == 'nt'  or keydict[j] == 'n' or keydict[j] == 'nr':
                         keyword = j
