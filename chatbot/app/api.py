@@ -1,6 +1,6 @@
 # coding: utf-8
 from . import app, db
-from flask import Flask, jsonify, redirect, url_for
+from flask import Flask, jsonify, redirect, url_for, session
 import re
 import jieba
 import jieba.analyse
@@ -97,6 +97,7 @@ def getcontent(text):
         })
     return chat(text) 
 
+
 @app.route('/chat/<text>', methods=['GET', 'POST'])
 def chat(text):
     text = urllib.quote(text.encode('utf8'))
@@ -110,3 +111,5 @@ def chat(text):
         'tag':tag,
         'content':content
     })  
+
+

@@ -3,73 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="http://api.map.baidu.com/api?v=1.4" type="text/javascript"></script>
 	<title>chatbot</title>
+	<script src="http://api.map.baidu.com/api?v=2.0&ak=iW9tLVSnsatY0oRFgDGn5NvxrZIke65b" type="text/javascript"></script>
 </head>
 <body>
-	<div class="top"></div>
-	<div class="content" v-el:content v-cloak>
-		<div class="chatbot">
-			<div class="img"></div>
-			<div class="bubble">
-				<div class="angle"></div>
-				<div class="box"><p>你好，我是木小犀，我可以为你解答很多问题，也可以陪你聊天哟~<br/>
-							如果你想问路，例如你要去图书馆，请问'华中师范大学图书馆在哪儿'；<br/>
-							如果你想得到网址，例如你想知道信息门户的网址，请问'信息门户的网址'；<br/>
-							如果你想得到照片，例如你想要图书馆的照片，请问'图书馆的照片'；<br/>
-							如果你想得到资料或者通知等等，例如你想要华中师范大学的资料，请问'华中师范大学的资料'；<br/>
-							如果你想和我聊天，就直接来吧。
-				</p></div>
-			</div>
-		</div>
-		<div v-for="myque in myques">
-			<div class="user">
-				<div class="img"></div>
-				<div class="bubble">
-					<div class="angle"></div>
-					<div class="box"><p>${ myque.text }</p></div>
-				</div>
-			</div>
-			<div class="chatbot">
-				<div class="img"></div>
-				<div class="bubble">
-					<div class="angle"></div>
-					<template v-if=" myque.tag == 'pic' ">
-						<div class="box box-img"><img :src="myque.bot" v-on:click="largepic(myque)"></div>
-					</template>
-					<template v-if=" myque.tag == 'txt' ">
-						<div class="box"><p>${ myque.bot }</p></div>
-					</template>
-					<template v-if=" myque.tag == 'unk' ">
-						<div class="box"><p>我也不知道..请你换个姿势再问一遍吧..<br/>
-							如果你想问路，例如你要去图书馆，请问'华中师范大学图书馆在哪儿'；<br/>
-							如果你想得到网址，例如你想知道信息门户的网址，请问'信息门户的网址'；<br/>
-							如果你想得到照片，例如你想要图书馆的照片，请问'图书馆的照片'；<br/>
-							如果你想得到资料或者通知等等，例如你想要华中师范大学的资料，请问'华中师范大学的资料'。</p></div>
-					</template>
-					<template v-if=" myque.tag == 'web' "></div>
-						<div class="box"><a href="${ myque.bot }">${ myque.bot }</a></div>
-					</template>
-					<template v-if=" myque.tag == 'map' ">
-						<div class="box" id="allmap"></div>
-
-					</template>
-					<template v-if="myque.largepic">
-						<div class="largepic">
-							<div class="pic_box">
-								<div class="close" v-on:click="close(myque)">X</div>
-								<div class="pic_content"><img :src="myque.bot"></div>
-							</div>
-						</div>
-					</template>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="input" v-cloak>
-		<input type="text" name="text" placeholder="你想知道什么？" v-model="ques">
-		<button @click="ask"></button>
-	</div>
-	<script src="../../static/build/bundle.js"></script>
+<div class="wrap" id="wrap" v-cloak>
+	<app></app>
+</div>
+<script src="../../static/build/bundle.js"></script>
 </body>
 </html>

@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "9e388db0757539d441cc"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "67f8608c34ea5559aed7"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -583,446 +583,25 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(3);
+	module.exports = __webpack_require__(5);
 
 
 /***/ },
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(5)();
+	exports = module.exports = __webpack_require__(8)();
 	// imports
 
 
 	// module
-	exports.push([module.id, "/* line 1, stdin */\n* {\n  margin: 0px;\n  padding: 0px; }\n\n/* line 5, stdin */\nhtml, body {\n  width: 100%;\n  height: 100%; }\n\n/* line 9, stdin */\n[v-cloak] {\n  display: none; }\n\n/* line 12, stdin */\n#allmap {\n  width: 180px;\n  height: 180px; }\n\n/* line 16, stdin */\n.wrap {\n  width: 100%; }\n\n/* line 19, stdin */\n.top {\n  width: 100%;\n  height: 10%;\n  background: url(" + __webpack_require__(13) + ") center no-repeat;\n  background-size: 90%;\n  text-align: center;\n  background-color: #73c697; }\n\n/* line 27, stdin */\n.input {\n  position: absolute;\n  bottom: 0px;\n  display: -webkit-flex;\n  display: flex;\n  width: 100%;\n  height: 10%;\n  background-color: #6ece97;\n  justify-content: center;\n  align-items: center; }\n\n/* line 38, stdin */\ninput[type=\"text\"] {\n  box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  -webkit-box-sizing: border-box;\n  background-color: #8bd8ac;\n  width: 70%;\n  height: 44px;\n  color: #f3f3f3;\n  border-style: none;\n  border-radius: 10px;\n  margin: 5px;\n  padding: 2px 5%;\n  font-size: 16px; }\n\n/* line 52, stdin */\nbutton {\n  box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  -webkit-box-sizing: border-box;\n  border-style: none;\n  border-radius: 10px;\n  background: url(" + __webpack_require__(14) + ") center no-repeat;\n  background-color: #cbedda;\n  width: 55px;\n  height: 44px;\n  margin: 5px; }\n\n/* line 64, stdin */\n.content {\n  width: calc(100% - 30px);\n  height: 80%;\n  padding: 0px 15px;\n  overflow: auto; }\n  /* line 69, stdin */\n  .content .chatbot, .content .user {\n    width: 100%;\n    margin-top: 20px;\n    margin-bottom: 20px;\n    display: -webkit-flex;\n    display: flex; }\n    /* line 75, stdin */\n    .content .chatbot .img, .content .user .img {\n      width: 40px;\n      height: 40px; }\n    /* line 79, stdin */\n    .content .chatbot .bubble, .content .user .bubble {\n      width: calc(100% - 50px);\n      display: -webkit-flex;\n      display: flex; }\n      /* line 83, stdin */\n      .content .chatbot .bubble .angle, .content .user .bubble .angle {\n        width: 0;\n        height: 0;\n        border-width: 10px 5px;\n        border-style: solid; }\n      /* line 89, stdin */\n      .content .chatbot .bubble .box, .content .user .bubble .box {\n        padding: 10px;\n        box-sizing: border-box;\n        -moz-box-sizing: border-box;\n        -webkit-box-sizing: border-box;\n        max-width: calc(100% - 30px); }\n        /* line 95, stdin */\n        .content .chatbot .bubble .box p, .content .chatbot .bubble .box a, .content .user .bubble .box p, .content .user .bubble .box a {\n          font-family: \"Microsoft YaHei\";\n          word-wrap: break-word; }\n          @media screen and (max-width: 330px) {\n            /* line 95, stdin */\n            .content .chatbot .bubble .box p, .content .chatbot .bubble .box a, .content .user .bubble .box p, .content .user .bubble .box a {\n              font-size: 13px;\n              line-height: 19px; } }\n          @media (min-width: 330px) and (max-width: 400px) {\n            /* line 95, stdin */\n            .content .chatbot .bubble .box p, .content .chatbot .bubble .box a, .content .user .bubble .box p, .content .user .bubble .box a {\n              font-size: 15px;\n              line-height: 22px; } }\n          @media (min-width: 400px) {\n            /* line 95, stdin */\n            .content .chatbot .bubble .box p, .content .chatbot .bubble .box a, .content .user .bubble .box p, .content .user .bubble .box a {\n              font-size: 17px;\n              line-height: 25px; } }\n      /* line 112, stdin */\n      .content .chatbot .bubble .box-img, .content .user .bubble .box-img {\n        width: calc(100% - 30px); }\n        /* line 114, stdin */\n        .content .chatbot .bubble .box-img img, .content .user .bubble .box-img img {\n          width: calc(100% - 30px); }\n  /* line 120, stdin */\n  .content .chatbot {\n    flex-direction: row; }\n    /* line 122, stdin */\n    .content .chatbot .img {\n      background-size: 50%;\n      background: url(" + __webpack_require__(12) + ") center no-repeat; }\n    /* line 126, stdin */\n    .content .chatbot .bubble {\n      flex-direction: row; }\n      /* line 128, stdin */\n      .content .chatbot .bubble .angle {\n        border-color: #f3f3f3 #f3f3f3 #ffffff #ffffff; }\n      /* line 131, stdin */\n      .content .chatbot .bubble .box {\n        background-color: #f3f3f3;\n        border-radius: 0px 10px 10px 10px; }\n        /* line 134, stdin */\n        .content .chatbot .bubble .box p {\n          color: #636363; }\n  /* line 140, stdin */\n  .content .user {\n    flex-direction: row-reverse; }\n    /* line 142, stdin */\n    .content .user .img {\n      width: 40px;\n      height: 40px;\n      background: url(" + __webpack_require__(15) + ") center no-repeat; }\n    /* line 147, stdin */\n    .content .user .bubble {\n      flex-direction: row-reverse; }\n      /* line 149, stdin */\n      .content .user .bubble .angle {\n        border-color: #3cb879 #ffffff #ffffff #3cb879; }\n      /* line 152, stdin */\n      .content .user .bubble .box {\n        background-color: #3cb879;\n        border-radius: 10px 0px 10px 10px; }\n        /* line 155, stdin */\n        .content .user .bubble .box p {\n          color: #f3f3f3; }\n\n/* line 162, stdin */\n.largepic {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  z-index: 300;\n  width: 100%;\n  height: 100%;\n  background: transparent; }\n  /* line 170, stdin */\n  .largepic .pic_box {\n    position: absolute;\n    width: 100%;\n    height: 65%;\n    background: rgba(41, 47, 51, 0.7);\n    top: 50%;\n    left: 50%;\n    -webkit-transform: translateX(-50%) translateY(-50%);\n    -moz-transform: translateX(-50%) translateY(-50%);\n    -ms-transform: translateX(-50%) translateY(-50%);\n    transform: translateX(-50%) translateY(-50%); }\n    /* line 181, stdin */\n    .largepic .pic_box .close {\n      position: absolute;\n      top: 10px;\n      right: 5px;\n      width: 15px;\n      height: 15px;\n      color: #f3f3f3;\n      transform: scale(2, 1.5); }\n    /* line 190, stdin */\n    .largepic .pic_box .pic_content {\n      width: 100%;\n      height: 100%;\n      display: -webkit-flex;\n      display: flex;\n      justify-content: center;\n      align-items: center; }\n      /* line 197, stdin */\n      .largepic .pic_box .pic_content img {\n        max-width: 100%;\n        max-height: 75%; }\n", "", {"version":3,"sources":["/./scss/index.scss","/./scss/scss/index.scss"],"names":[],"mappings":"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","file":"index.scss","sourcesContent":["/* line 1, stdin */\n* {\n  margin: 0px;\n  padding: 0px; }\n\n/* line 5, stdin */\nhtml, body {\n  width: 100%;\n  height: 100%; }\n\n/* line 9, stdin */\n[v-cloak] {\n  display: none; }\n\n/* line 12, stdin */\n#allmap {\n  width: 180px;\n  height: 180px; }\n\n/* line 16, stdin */\n.wrap {\n  width: 100%; }\n\n/* line 19, stdin */\n.top {\n  width: 100%;\n  height: 10%;\n  background: url(\"../img/muxichat.png\") center no-repeat;\n  background-size: 90%;\n  text-align: center;\n  background-color: #73c697; }\n\n/* line 27, stdin */\n.input {\n  position: absolute;\n  bottom: 0px;\n  display: -webkit-flex;\n  display: flex;\n  width: 100%;\n  height: 10%;\n  background-color: #6ece97;\n  justify-content: center;\n  align-items: center; }\n\n/* line 38, stdin */\ninput[type=\"text\"] {\n  box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  -webkit-box-sizing: border-box;\n  background-color: #8bd8ac;\n  width: 70%;\n  height: 44px;\n  color: #f3f3f3;\n  border-style: none;\n  border-radius: 10px;\n  margin: 5px;\n  padding: 2px 5%;\n  font-size: 16px; }\n\n/* line 52, stdin */\nbutton {\n  box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  -webkit-box-sizing: border-box;\n  border-style: none;\n  border-radius: 10px;\n  background: url(\"../img/send.png\") center no-repeat;\n  background-color: #cbedda;\n  width: 55px;\n  height: 44px;\n  margin: 5px; }\n\n/* line 64, stdin */\n.content {\n  width: calc(100% - 30px);\n  height: 80%;\n  padding: 0px 15px;\n  overflow: auto; }\n  /* line 69, stdin */\n  .content .chatbot, .content .user {\n    width: 100%;\n    margin-top: 20px;\n    margin-bottom: 20px;\n    display: -webkit-flex;\n    display: flex; }\n    /* line 75, stdin */\n    .content .chatbot .img, .content .user .img {\n      width: 40px;\n      height: 40px; }\n    /* line 79, stdin */\n    .content .chatbot .bubble, .content .user .bubble {\n      width: calc(100% - 50px);\n      display: -webkit-flex;\n      display: flex; }\n      /* line 83, stdin */\n      .content .chatbot .bubble .angle, .content .user .bubble .angle {\n        width: 0;\n        height: 0;\n        border-width: 10px 5px;\n        border-style: solid; }\n      /* line 89, stdin */\n      .content .chatbot .bubble .box, .content .user .bubble .box {\n        padding: 10px;\n        box-sizing: border-box;\n        -moz-box-sizing: border-box;\n        -webkit-box-sizing: border-box;\n        max-width: calc(100% - 30px); }\n        /* line 95, stdin */\n        .content .chatbot .bubble .box p, .content .chatbot .bubble .box a, .content .user .bubble .box p, .content .user .bubble .box a {\n          font-family: \"Microsoft YaHei\";\n          word-wrap: break-word; }\n          @media screen and (max-width: 330px) {\n            /* line 95, stdin */\n            .content .chatbot .bubble .box p, .content .chatbot .bubble .box a, .content .user .bubble .box p, .content .user .bubble .box a {\n              font-size: 13px;\n              line-height: 19px; } }\n          @media (min-width: 330px) and (max-width: 400px) {\n            /* line 95, stdin */\n            .content .chatbot .bubble .box p, .content .chatbot .bubble .box a, .content .user .bubble .box p, .content .user .bubble .box a {\n              font-size: 15px;\n              line-height: 22px; } }\n          @media (min-width: 400px) {\n            /* line 95, stdin */\n            .content .chatbot .bubble .box p, .content .chatbot .bubble .box a, .content .user .bubble .box p, .content .user .bubble .box a {\n              font-size: 17px;\n              line-height: 25px; } }\n      /* line 112, stdin */\n      .content .chatbot .bubble .box-img, .content .user .bubble .box-img {\n        width: calc(100% - 30px); }\n        /* line 114, stdin */\n        .content .chatbot .bubble .box-img img, .content .user .bubble .box-img img {\n          width: calc(100% - 30px); }\n  /* line 120, stdin */\n  .content .chatbot {\n    flex-direction: row; }\n    /* line 122, stdin */\n    .content .chatbot .img {\n      background-size: 50%;\n      background: url(\"../img/muxi.jpg\") center no-repeat; }\n    /* line 126, stdin */\n    .content .chatbot .bubble {\n      flex-direction: row; }\n      /* line 128, stdin */\n      .content .chatbot .bubble .angle {\n        border-color: #f3f3f3 #f3f3f3 #ffffff #ffffff; }\n      /* line 131, stdin */\n      .content .chatbot .bubble .box {\n        background-color: #f3f3f3;\n        border-radius: 0px 10px 10px 10px; }\n        /* line 134, stdin */\n        .content .chatbot .bubble .box p {\n          color: #636363; }\n  /* line 140, stdin */\n  .content .user {\n    flex-direction: row-reverse; }\n    /* line 142, stdin */\n    .content .user .img {\n      width: 40px;\n      height: 40px;\n      background: url(\"../img/user.jpg\") center no-repeat; }\n    /* line 147, stdin */\n    .content .user .bubble {\n      flex-direction: row-reverse; }\n      /* line 149, stdin */\n      .content .user .bubble .angle {\n        border-color: #3cb879 #ffffff #ffffff #3cb879; }\n      /* line 152, stdin */\n      .content .user .bubble .box {\n        background-color: #3cb879;\n        border-radius: 10px 0px 10px 10px; }\n        /* line 155, stdin */\n        .content .user .bubble .box p {\n          color: #f3f3f3; }\n\n/* line 162, stdin */\n.largepic {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  z-index: 300;\n  width: 100%;\n  height: 100%;\n  background: transparent; }\n  /* line 170, stdin */\n  .largepic .pic_box {\n    position: absolute;\n    width: 100%;\n    height: 65%;\n    background: rgba(41, 47, 51, 0.7);\n    top: 50%;\n    left: 50%;\n    -webkit-transform: translateX(-50%) translateY(-50%);\n    -moz-transform: translateX(-50%) translateY(-50%);\n    -ms-transform: translateX(-50%) translateY(-50%);\n    transform: translateX(-50%) translateY(-50%); }\n    /* line 181, stdin */\n    .largepic .pic_box .close {\n      position: absolute;\n      top: 10px;\n      right: 5px;\n      width: 15px;\n      height: 15px;\n      color: #f3f3f3;\n      transform: scale(2, 1.5); }\n    /* line 190, stdin */\n    .largepic .pic_box .pic_content {\n      width: 100%;\n      height: 100%;\n      display: -webkit-flex;\n      display: flex;\n      justify-content: center;\n      align-items: center; }\n      /* line 197, stdin */\n      .largepic .pic_box .pic_content img {\n        max-width: 100%;\n        max-height: 75%; }\n","*{\n\tmargin: 0px;\n\tpadding: 0px;\t\n}\nhtml,body{\n\twidth:100%;\n\theight:100%;\n}\n[v-cloak] {\n  display: none;\n}\n#allmap{\n\twidth: 180px;\n\theight: 180px;\n}\n.wrap{\n\twidth: 100%;\n}\n.top{\n\twidth: 100%;\n\theight: 10%;\n\tbackground: url('../img/muxichat.png') center no-repeat;\n\tbackground-size: 90%;\n\ttext-align: center;\n\tbackground-color: #73c697;\n}\n.input{\n\tposition: absolute;\n\tbottom: 0px;\n\tdisplay: -webkit-flex; \n  \tdisplay: flex;\n\twidth: 100%;\n\theight: 10%;\n\tbackground-color: #6ece97;\n\tjustify-content:center;\n\talign-items: center;\n}\ninput[type=\"text\"]{\n\tbox-sizing:border-box;\n\t-moz-box-sizing:border-box;\n\t-webkit-box-sizing:border-box;\n\tbackground-color: #8bd8ac;\n\twidth: 70%;\n\theight: 44px;\n\tcolor: #f3f3f3;\n\tborder-style: none;\n\tborder-radius: 10px;\n\tmargin: 5px;\n\tpadding:2px 5%;\n\tfont-size: 16px;\n}\nbutton{\n\tbox-sizing:border-box;\n\t-moz-box-sizing:border-box;\n\t-webkit-box-sizing:border-box;\n\tborder-style: none;\n\tborder-radius: 10px;\n\tbackground: url('../img/send.png') center no-repeat;\n\tbackground-color: #cbedda;\n\twidth: 55px;\n\theight: 44px;\n\tmargin:5px;\n}\n.content{\n\twidth: calc(100% - 30px);\n\theight: 80%;\n\tpadding:0px 15px;\n\toverflow: auto;\n\t.chatbot,.user{\n\t\twidth: 100%;\n\t\tmargin-top: 20px;\n\t\tmargin-bottom: 20px;\n\t\tdisplay: -webkit-flex; \n\t\tdisplay: flex;\n\t\t.img{\n\t\t\twidth: 40px;\n\t\t\theight: 40px;\n\t\t}\n\t\t.bubble{\n\t\t\twidth: calc(100% - 50px);\n\t\t\tdisplay: -webkit-flex; \n  \t\t\tdisplay: flex;\n\t\t\t.angle{\n\t\t\t\twidth:0; \n\t\t\t\theight:0; \n\t\t\t\tborder-width:10px 5px; \n\t\t\t\tborder-style:solid;\n\t\t\t}\n\t\t\t.box{\n\t\t\t\tpadding: 10px;\n\t\t\t\tbox-sizing:border-box;\n\t\t\t\t-moz-box-sizing:border-box;\n\t\t\t\t-webkit-box-sizing:border-box;\n\t\t\t\tmax-width: calc(100% - 30px);\n\t\t\t\tp,a{\n\t\t\t\t\tfont-family: \"Microsoft YaHei\";\n\t\t\t\t\tword-wrap:break-word;\n\t\t\t\t\t@media screen and (max-width: 330px){\n\t\t\t\t\t\tfont-size: 13px;\n\t\t\t\t\t\tline-height: 19px;\n\t\t\t\t\t}\n\t\t\t\t\t@media (min-width: 330px) and (max-width: 400px){\n\t\t\t\t\t\tfont-size: 15px;\n\t\t\t\t\t\tline-height: 22px;\n\t\t\t\t\t}\n\t\t\t\t\t@media (min-width: 400px) {\n\t\t\t\t\t\tfont-size: 17px;\n\t\t\t\t\t\tline-height: 25px;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t\t.box-img{\n\t\t\t\twidth: calc(100% - 30px);\n\t\t\t\timg{\n\t\t\t\t\twidth: calc(100% - 30px);\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n\t.chatbot{\n\t\tflex-direction:row;\n\t\t.img{\n\t\t\tbackground-size: 50%;\n\t\t\tbackground: url('../img/muxi.jpg') center no-repeat;\n\t\t}\n\t\t.bubble{\n\t\t\tflex-direction:row;\n\t\t\t.angle{\n\t\t\t\tborder-color:#f3f3f3 #f3f3f3 #ffffff #ffffff;\n\t\t\t}\n\t\t\t.box{\n\t\t\t\tbackground-color: #f3f3f3;\n\t\t\t\tborder-radius: 0px 10px 10px 10px;\n\t\t\t\tp{\n\t\t\t\t\tcolor: #636363;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n\t.user{\n\t\tflex-direction:row-reverse;\n\t\t.img{\n\t\t\twidth: 40px;\n\t\t\theight: 40px;\n\t\t\tbackground: url('../img/user.jpg') center no-repeat;\n\t\t}\n\t\t.bubble{\n\t\t\tflex-direction:row-reverse;\n\t\t\t.angle{\n\t\t\t\tborder-color:#3cb879 #ffffff #ffffff #3cb879;\n\t\t\t}\n\t\t\t.box{\n\t\t\t\tbackground-color: #3cb879;\n\t\t\t\tborder-radius: 10px 0px 10px 10px;\n\t\t\t\tp{\n\t\t\t\t\tcolor:#f3f3f3;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n}\n.largepic{\n\t\tposition: absolute;\n\t\ttop: 0px;\n\t\tleft: 0px;\n\t\tz-index: 300;\n\t\twidth: 100%;\n\t\theight: 100%;\n\t\tbackground:transparent;\n\t\t.pic_box{\n\t\t\tposition: absolute;\n\t\t\twidth: 100%;\n\t\t\theight: 65%;\n\t\t\tbackground: rgba(41, 47, 51, 0.7);\n\t\t\ttop: 50%;\n\t\t\tleft: 50%;\n\t\t\t-webkit-transform: translateX(-50%) translateY(-50%);\n\t\t\t-moz-transform: translateX(-50%) translateY(-50%);\n\t\t\t-ms-transform: translateX(-50%) translateY(-50%);\n\t\t\ttransform: translateX(-50%) translateY(-50%);\n\t\t\t.close{\n\t\t\t\tposition: absolute;\n\t\t\t\ttop: 10px;\n\t\t\t\tright: 5px;\n\t\t\t\twidth: 15px;\n\t\t\t\theight: 15px;\n\t\t\t\tcolor:#f3f3f3;\n\t\t\t\ttransform: scale(2, 1.5);\n\t\t\t}\n\t\t\t.pic_content{\n\t\t\t\twidth: 100%;\n\t\t\t\theight: 100%;\n\t\t\t\tdisplay: -webkit-flex; \n\t  \t\t\tdisplay: flex;\n\t  \t\t\tjustify-content:center;\n\t  \t\t\talign-items: center;\n\t\t  \t\timg{\n\t\t\t\t\tmax-width: 100%;\n\t\t\t\t\tmax-height: 75%;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n}"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "/* line 1, stdin */\n* {\n  margin: 0px;\n  padding: 0px;\n  -moz-box-sizing: border-box;\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box; }\n\n/* line 8, stdin */\nhtml, body {\n  width: 100%;\n  height: 100%; }\n\n/* line 12, stdin */\n[v-cloak] {\n  display: none; }\n\n/* line 15, stdin */\n.wrap {\n  width: 100%;\n  height: 100%;\n  display: -webkit-flex;\n  display: flex;\n  flex-direction: column; }\n\n/* line 22, stdin */\n.top {\n  width: 100%;\n  flex: 1;\n  background: url(" + __webpack_require__(15) + ") center no-repeat;\n  background-size: 90%;\n  text-align: center;\n  background-color: #73c697; }\n\n/* line 30, stdin */\n.input {\n  display: -webkit-flex;\n  display: flex;\n  width: 100%;\n  flex: 1;\n  background-color: #6ece97;\n  justify-content: center;\n  align-items: center; }\n\n/* line 40, stdin */\ninput[type=\"text\"] {\n  background-color: #8bd8ac;\n  width: 70%;\n  height: 44px;\n  color: #f3f3f3;\n  border-style: none;\n  border-radius: 10px;\n  margin: 5px;\n  padding: 2px 5%;\n  font-size: 16px; }\n\n/* line 51, stdin */\nbutton {\n  border-style: none;\n  border-radius: 10px;\n  background: url(" + __webpack_require__(16) + ") center no-repeat;\n  background-color: #cbedda;\n  width: 55px;\n  height: 44px;\n  margin: 5px; }\n\n/* line 60, stdin */\n[id^=\"box-\"] {\n  width: calc(100% - 30px); }\n\n/* line 63, stdin */\n[id^=\"map-\"] {\n  width: 100%;\n  height: 200px; }\n\n/* line 67, stdin */\n.content {\n  width: 100%;\n  flex: 8;\n  padding: 0px 15px;\n  overflow: scroll; }\n  /* line 72, stdin */\n  .content .chatbot, .content .user {\n    width: 100%;\n    margin-top: 20px;\n    margin-bottom: 20px;\n    display: -webkit-flex;\n    display: flex; }\n    /* line 78, stdin */\n    .content .chatbot .img, .content .user .img {\n      width: 40px;\n      height: 40px; }\n    /* line 82, stdin */\n    .content .chatbot .bubble, .content .user .bubble {\n      width: calc(100% - 50px);\n      display: -webkit-flex;\n      display: flex; }\n      /* line 86, stdin */\n      .content .chatbot .bubble .angle, .content .user .bubble .angle {\n        width: 0;\n        height: 0;\n        border-width: 10px 5px;\n        border-style: solid; }\n      /* line 92, stdin */\n      .content .chatbot .bubble .box, .content .chatbot .bubble [id^=\"box-\"], .content .user .bubble .box, .content .user .bubble [id^=\"box-\"] {\n        padding: 10px;\n        max-width: calc(100% - 30px); }\n        /* line 95, stdin */\n        .content .chatbot .bubble .box p, .content .chatbot .bubble .box a, .content .chatbot .bubble [id^=\"box-\"] p, .content .chatbot .bubble [id^=\"box-\"] a, .content .user .bubble .box p, .content .user .bubble .box a, .content .user .bubble [id^=\"box-\"] p, .content .user .bubble [id^=\"box-\"] a {\n          font-family: \"Microsoft YaHei\";\n          word-wrap: break-word; }\n          @media screen and (max-width: 330px) {\n            /* line 95, stdin */\n            .content .chatbot .bubble .box p, .content .chatbot .bubble .box a, .content .chatbot .bubble [id^=\"box-\"] p, .content .chatbot .bubble [id^=\"box-\"] a, .content .user .bubble .box p, .content .user .bubble .box a, .content .user .bubble [id^=\"box-\"] p, .content .user .bubble [id^=\"box-\"] a {\n              font-size: 13px;\n              line-height: 19px; } }\n          @media (min-width: 330px) and (max-width: 400px) {\n            /* line 95, stdin */\n            .content .chatbot .bubble .box p, .content .chatbot .bubble .box a, .content .chatbot .bubble [id^=\"box-\"] p, .content .chatbot .bubble [id^=\"box-\"] a, .content .user .bubble .box p, .content .user .bubble .box a, .content .user .bubble [id^=\"box-\"] p, .content .user .bubble [id^=\"box-\"] a {\n              font-size: 15px;\n              line-height: 22px; } }\n          @media (min-width: 400px) {\n            /* line 95, stdin */\n            .content .chatbot .bubble .box p, .content .chatbot .bubble .box a, .content .chatbot .bubble [id^=\"box-\"] p, .content .chatbot .bubble [id^=\"box-\"] a, .content .user .bubble .box p, .content .user .bubble .box a, .content .user .bubble [id^=\"box-\"] p, .content .user .bubble [id^=\"box-\"] a {\n              font-size: 17px;\n              line-height: 25px; } }\n      /* line 112, stdin */\n      .content .chatbot .bubble .box-img, .content .user .bubble .box-img {\n        width: calc(100% - 30px); }\n        /* line 114, stdin */\n        .content .chatbot .bubble .box-img img, .content .user .bubble .box-img img {\n          width: calc(100% - 30px); }\n  /* line 120, stdin */\n  .content .chatbot {\n    flex-direction: row; }\n    /* line 122, stdin */\n    .content .chatbot .img {\n      background-size: 50%;\n      background: url(" + __webpack_require__(14) + ") center no-repeat; }\n    /* line 126, stdin */\n    .content .chatbot .bubble {\n      flex-direction: row; }\n      /* line 128, stdin */\n      .content .chatbot .bubble .angle {\n        border-color: #f3f3f3 #f3f3f3 #ffffff #ffffff; }\n      /* line 131, stdin */\n      .content .chatbot .bubble .box, .content .chatbot .bubble [id^=\"box-\"] {\n        background-color: #f3f3f3;\n        border-radius: 0px 10px 10px 10px; }\n        /* line 134, stdin */\n        .content .chatbot .bubble .box p, .content .chatbot .bubble [id^=\"box-\"] p {\n          color: #636363; }\n  /* line 140, stdin */\n  .content .user {\n    flex-direction: row-reverse; }\n    /* line 142, stdin */\n    .content .user .img {\n      width: 40px;\n      height: 40px;\n      background: url(" + __webpack_require__(17) + ") center no-repeat; }\n    /* line 147, stdin */\n    .content .user .bubble {\n      flex-direction: row-reverse; }\n      /* line 149, stdin */\n      .content .user .bubble .angle {\n        border-color: #3cb879 #ffffff #ffffff #3cb879; }\n      /* line 152, stdin */\n      .content .user .bubble .box {\n        background-color: #3cb879;\n        border-radius: 10px 0px 10px 10px; }\n        /* line 155, stdin */\n        .content .user .bubble .box p {\n          color: #f3f3f3; }\n\n/* line 162, stdin */\n.largepic {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  z-index: 300;\n  width: 100%;\n  height: 100%;\n  background: transparent; }\n  /* line 170, stdin */\n  .largepic .pic_box {\n    position: absolute;\n    width: 100%;\n    height: 65%;\n    background: rgba(41, 47, 51, 0.7);\n    top: 50%;\n    left: 50%;\n    -webkit-transform: translateX(-50%) translateY(-50%);\n    -moz-transform: translateX(-50%) translateY(-50%);\n    -ms-transform: translateX(-50%) translateY(-50%);\n    transform: translateX(-50%) translateY(-50%); }\n    /* line 181, stdin */\n    .largepic .pic_box .close {\n      position: absolute;\n      top: 10px;\n      right: 5px;\n      width: 15px;\n      height: 15px;\n      color: #f3f3f3;\n      transform: scale(2, 1.5); }\n    /* line 190, stdin */\n    .largepic .pic_box .pic_content {\n      width: 100%;\n      height: 100%;\n      display: -webkit-flex;\n      display: flex;\n      justify-content: center;\n      align-items: center; }\n      /* line 197, stdin */\n      .largepic .pic_box .pic_content img {\n        max-width: 100%;\n        max-height: 75%; }\n", "", {"version":3,"sources":["/./scss/index.scss","/./scss/scss/index.scss"],"names":[],"mappings":"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","file":"index.scss","sourcesContent":["/* line 1, stdin */\n* {\n  margin: 0px;\n  padding: 0px;\n  -moz-box-sizing: border-box;\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box; }\n\n/* line 8, stdin */\nhtml, body {\n  width: 100%;\n  height: 100%; }\n\n/* line 12, stdin */\n[v-cloak] {\n  display: none; }\n\n/* line 15, stdin */\n.wrap {\n  width: 100%;\n  height: 100%;\n  display: -webkit-flex;\n  display: flex;\n  flex-direction: column; }\n\n/* line 22, stdin */\n.top {\n  width: 100%;\n  flex: 1;\n  background: url(\"../img/muxichat.png\") center no-repeat;\n  background-size: 90%;\n  text-align: center;\n  background-color: #73c697; }\n\n/* line 30, stdin */\n.input {\n  display: -webkit-flex;\n  display: flex;\n  width: 100%;\n  flex: 1;\n  background-color: #6ece97;\n  justify-content: center;\n  align-items: center; }\n\n/* line 40, stdin */\ninput[type=\"text\"] {\n  background-color: #8bd8ac;\n  width: 70%;\n  height: 44px;\n  color: #f3f3f3;\n  border-style: none;\n  border-radius: 10px;\n  margin: 5px;\n  padding: 2px 5%;\n  font-size: 16px; }\n\n/* line 51, stdin */\nbutton {\n  border-style: none;\n  border-radius: 10px;\n  background: url(\"../img/send.png\") center no-repeat;\n  background-color: #cbedda;\n  width: 55px;\n  height: 44px;\n  margin: 5px; }\n\n/* line 60, stdin */\n[id^=\"box-\"] {\n  width: calc(100% - 30px); }\n\n/* line 63, stdin */\n[id^=\"map-\"] {\n  width: 100%;\n  height: 200px; }\n\n/* line 67, stdin */\n.content {\n  width: 100%;\n  flex: 8;\n  padding: 0px 15px;\n  overflow: scroll; }\n  /* line 72, stdin */\n  .content .chatbot, .content .user {\n    width: 100%;\n    margin-top: 20px;\n    margin-bottom: 20px;\n    display: -webkit-flex;\n    display: flex; }\n    /* line 78, stdin */\n    .content .chatbot .img, .content .user .img {\n      width: 40px;\n      height: 40px; }\n    /* line 82, stdin */\n    .content .chatbot .bubble, .content .user .bubble {\n      width: calc(100% - 50px);\n      display: -webkit-flex;\n      display: flex; }\n      /* line 86, stdin */\n      .content .chatbot .bubble .angle, .content .user .bubble .angle {\n        width: 0;\n        height: 0;\n        border-width: 10px 5px;\n        border-style: solid; }\n      /* line 92, stdin */\n      .content .chatbot .bubble .box, .content .chatbot .bubble [id^=\"box-\"], .content .user .bubble .box, .content .user .bubble [id^=\"box-\"] {\n        padding: 10px;\n        max-width: calc(100% - 30px); }\n        /* line 95, stdin */\n        .content .chatbot .bubble .box p, .content .chatbot .bubble .box a, .content .chatbot .bubble [id^=\"box-\"] p, .content .chatbot .bubble [id^=\"box-\"] a, .content .user .bubble .box p, .content .user .bubble .box a, .content .user .bubble [id^=\"box-\"] p, .content .user .bubble [id^=\"box-\"] a {\n          font-family: \"Microsoft YaHei\";\n          word-wrap: break-word; }\n          @media screen and (max-width: 330px) {\n            /* line 95, stdin */\n            .content .chatbot .bubble .box p, .content .chatbot .bubble .box a, .content .chatbot .bubble [id^=\"box-\"] p, .content .chatbot .bubble [id^=\"box-\"] a, .content .user .bubble .box p, .content .user .bubble .box a, .content .user .bubble [id^=\"box-\"] p, .content .user .bubble [id^=\"box-\"] a {\n              font-size: 13px;\n              line-height: 19px; } }\n          @media (min-width: 330px) and (max-width: 400px) {\n            /* line 95, stdin */\n            .content .chatbot .bubble .box p, .content .chatbot .bubble .box a, .content .chatbot .bubble [id^=\"box-\"] p, .content .chatbot .bubble [id^=\"box-\"] a, .content .user .bubble .box p, .content .user .bubble .box a, .content .user .bubble [id^=\"box-\"] p, .content .user .bubble [id^=\"box-\"] a {\n              font-size: 15px;\n              line-height: 22px; } }\n          @media (min-width: 400px) {\n            /* line 95, stdin */\n            .content .chatbot .bubble .box p, .content .chatbot .bubble .box a, .content .chatbot .bubble [id^=\"box-\"] p, .content .chatbot .bubble [id^=\"box-\"] a, .content .user .bubble .box p, .content .user .bubble .box a, .content .user .bubble [id^=\"box-\"] p, .content .user .bubble [id^=\"box-\"] a {\n              font-size: 17px;\n              line-height: 25px; } }\n      /* line 112, stdin */\n      .content .chatbot .bubble .box-img, .content .user .bubble .box-img {\n        width: calc(100% - 30px); }\n        /* line 114, stdin */\n        .content .chatbot .bubble .box-img img, .content .user .bubble .box-img img {\n          width: calc(100% - 30px); }\n  /* line 120, stdin */\n  .content .chatbot {\n    flex-direction: row; }\n    /* line 122, stdin */\n    .content .chatbot .img {\n      background-size: 50%;\n      background: url(\"../img/muxi.jpg\") center no-repeat; }\n    /* line 126, stdin */\n    .content .chatbot .bubble {\n      flex-direction: row; }\n      /* line 128, stdin */\n      .content .chatbot .bubble .angle {\n        border-color: #f3f3f3 #f3f3f3 #ffffff #ffffff; }\n      /* line 131, stdin */\n      .content .chatbot .bubble .box, .content .chatbot .bubble [id^=\"box-\"] {\n        background-color: #f3f3f3;\n        border-radius: 0px 10px 10px 10px; }\n        /* line 134, stdin */\n        .content .chatbot .bubble .box p, .content .chatbot .bubble [id^=\"box-\"] p {\n          color: #636363; }\n  /* line 140, stdin */\n  .content .user {\n    flex-direction: row-reverse; }\n    /* line 142, stdin */\n    .content .user .img {\n      width: 40px;\n      height: 40px;\n      background: url(\"../img/user.jpg\") center no-repeat; }\n    /* line 147, stdin */\n    .content .user .bubble {\n      flex-direction: row-reverse; }\n      /* line 149, stdin */\n      .content .user .bubble .angle {\n        border-color: #3cb879 #ffffff #ffffff #3cb879; }\n      /* line 152, stdin */\n      .content .user .bubble .box {\n        background-color: #3cb879;\n        border-radius: 10px 0px 10px 10px; }\n        /* line 155, stdin */\n        .content .user .bubble .box p {\n          color: #f3f3f3; }\n\n/* line 162, stdin */\n.largepic {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  z-index: 300;\n  width: 100%;\n  height: 100%;\n  background: transparent; }\n  /* line 170, stdin */\n  .largepic .pic_box {\n    position: absolute;\n    width: 100%;\n    height: 65%;\n    background: rgba(41, 47, 51, 0.7);\n    top: 50%;\n    left: 50%;\n    -webkit-transform: translateX(-50%) translateY(-50%);\n    -moz-transform: translateX(-50%) translateY(-50%);\n    -ms-transform: translateX(-50%) translateY(-50%);\n    transform: translateX(-50%) translateY(-50%); }\n    /* line 181, stdin */\n    .largepic .pic_box .close {\n      position: absolute;\n      top: 10px;\n      right: 5px;\n      width: 15px;\n      height: 15px;\n      color: #f3f3f3;\n      transform: scale(2, 1.5); }\n    /* line 190, stdin */\n    .largepic .pic_box .pic_content {\n      width: 100%;\n      height: 100%;\n      display: -webkit-flex;\n      display: flex;\n      justify-content: center;\n      align-items: center; }\n      /* line 197, stdin */\n      .largepic .pic_box .pic_content img {\n        max-width: 100%;\n        max-height: 75%; }\n","*{\n\tmargin: 0px;\n\tpadding: 0px;\n\t-moz-box-sizing: border-box;\n\t-webkit-box-sizing: border-box;\n\tbox-sizing: border-box;\t\n}\nhtml,body{\n\twidth:100%;\n\theight:100%;\n}\n[v-cloak]{\n  display: none;\n}\n.wrap{\n\twidth: 100%;\n\theight: 100%;\n\tdisplay: -webkit-flex;\n    display: flex;\n\tflex-direction: column;\n}\n.top{\n\twidth: 100%;\n\tflex:1;\n\tbackground: url('../img/muxichat.png') center no-repeat;\n\tbackground-size: 90%;\n\ttext-align: center;\n\tbackground-color: #73c697;\n}\n.input{\n\tdisplay: -webkit-flex; \n  \tdisplay: flex;\n\twidth: 100%;\n\tflex:1;\n\tbackground-color: #6ece97;\n\tjustify-content:center;\n\talign-items: center;\n}\n\ninput[type=\"text\"]{\n\tbackground-color: #8bd8ac;\n\twidth: 70%;\n\theight: 44px;\n\tcolor: #f3f3f3;\n\tborder-style: none;\n\tborder-radius: 10px;\n\tmargin: 5px;\n\tpadding:2px 5%;\n\tfont-size: 16px;\n}\nbutton{\n\tborder-style: none;\n\tborder-radius: 10px;\n\tbackground: url('../img/send.png') center no-repeat;\n\tbackground-color: #cbedda;\n\twidth: 55px;\n\theight: 44px;\n\tmargin:5px;\n}\n[id^=\"box-\"]{\n\twidth: calc(100% - 30px);\n}\n[id^=\"map-\"]{\n\twidth: 100%;\n\theight: 200px;\n}\n.content{\n\twidth: 100%;\n\tflex:8;\n\tpadding:0px 15px;\n\toverflow: scroll;\n\t.chatbot,.user{\n\t\twidth: 100%;\n\t\tmargin-top: 20px;\n\t\tmargin-bottom: 20px;\n\t\tdisplay: -webkit-flex; \n\t\tdisplay: flex;\n\t\t.img{\n\t\t\twidth: 40px;\n\t\t\theight: 40px;\n\t\t}\n\t\t.bubble{\n\t\t\twidth: calc(100% - 50px);\n\t\t\tdisplay: -webkit-flex; \n  \t\t\tdisplay: flex;\n\t\t\t.angle{\n\t\t\t\twidth:0; \n\t\t\t\theight:0; \n\t\t\t\tborder-width:10px 5px; \n\t\t\t\tborder-style:solid;\n\t\t\t}\n\t\t\t.box,[id^=\"box-\"]{\n\t\t\t\tpadding: 10px;\n\t\t\t\tmax-width: calc(100% - 30px);\n\t\t\t\tp,a{\n\t\t\t\t\tfont-family: \"Microsoft YaHei\";\n\t\t\t\t\tword-wrap:break-word;\n\t\t\t\t\t@media screen and (max-width: 330px){\n\t\t\t\t\t\tfont-size: 13px;\n\t\t\t\t\t\tline-height: 19px;\n\t\t\t\t\t}\n\t\t\t\t\t@media (min-width: 330px) and (max-width: 400px){\n\t\t\t\t\t\tfont-size: 15px;\n\t\t\t\t\t\tline-height: 22px;\n\t\t\t\t\t}\n\t\t\t\t\t@media (min-width: 400px) {\n\t\t\t\t\t\tfont-size: 17px;\n\t\t\t\t\t\tline-height: 25px;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t\t.box-img{\n\t\t\t\twidth: calc(100% - 30px);\n\t\t\t\timg{\n\t\t\t\t\twidth: calc(100% - 30px);\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n\t.chatbot{\n\t\tflex-direction:row;\n\t\t.img{\n\t\t\tbackground-size: 50%;\n\t\t\tbackground: url('../img/muxi.jpg') center no-repeat;\n\t\t}\n\t\t.bubble{\n\t\t\tflex-direction:row;\n\t\t\t.angle{\n\t\t\t\tborder-color:#f3f3f3 #f3f3f3 #ffffff #ffffff;\n\t\t\t}\n\t\t\t.box,[id^=\"box-\"]{\n\t\t\t\tbackground-color: #f3f3f3;\n\t\t\t\tborder-radius: 0px 10px 10px 10px;\n\t\t\t\tp{\n\t\t\t\t\tcolor: #636363;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n\t.user{\n\t\tflex-direction:row-reverse;\n\t\t.img{\n\t\t\twidth: 40px;\n\t\t\theight: 40px;\n\t\t\tbackground: url('../img/user.jpg') center no-repeat;\n\t\t}\n\t\t.bubble{\n\t\t\tflex-direction:row-reverse;\n\t\t\t.angle{\n\t\t\t\tborder-color:#3cb879 #ffffff #ffffff #3cb879;\n\t\t\t}\n\t\t\t.box{\n\t\t\t\tbackground-color: #3cb879;\n\t\t\t\tborder-radius: 10px 0px 10px 10px;\n\t\t\t\tp{\n\t\t\t\t\tcolor:#f3f3f3;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n}\n.largepic{\n\t\tposition: absolute;\n\t\ttop: 0px;\n\t\tleft: 0px;\n\t\tz-index: 300;\n\t\twidth: 100%;\n\t\theight: 100%;\n\t\tbackground:transparent;\n\t\t.pic_box{\n\t\t\tposition: absolute;\n\t\t\twidth: 100%;\n\t\t\theight: 65%;\n\t\t\tbackground: rgba(41, 47, 51, 0.7);\n\t\t\ttop: 50%;\n\t\t\tleft: 50%;\n\t\t\t-webkit-transform: translateX(-50%) translateY(-50%);\n\t\t\t-moz-transform: translateX(-50%) translateY(-50%);\n\t\t\t-ms-transform: translateX(-50%) translateY(-50%);\n\t\t\ttransform: translateX(-50%) translateY(-50%);\n\t\t\t.close{\n\t\t\t\tposition: absolute;\n\t\t\t\ttop: 10px;\n\t\t\t\tright: 5px;\n\t\t\t\twidth: 15px;\n\t\t\t\theight: 15px;\n\t\t\t\tcolor:#f3f3f3;\n\t\t\t\ttransform: scale(2, 1.5);\n\t\t\t}\n\t\t\t.pic_content{\n\t\t\t\twidth: 100%;\n\t\t\t\theight: 100%;\n\t\t\t\tdisplay: -webkit-flex; \n\t  \t\t\tdisplay: flex;\n\t  \t\t\tjustify-content:center;\n\t  \t\t\talign-items: center;\n\t\t  \t\timg{\n\t\t\t\t\tmax-width: 100%;\n\t\t\t\t\tmax-height: 75%;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n}"],"sourceRoot":"webpack://"}]);
 
 	// exports
 
 
 /***/ },
 /* 2 */
-/***/ function(module, exports) {
-
-	/**
-	 * Check if `obj` is an object.
-	 *
-	 * @param {Object} obj
-	 * @return {Boolean}
-	 * @api private
-	 */
-
-	function isObject(obj) {
-	  return null !== obj && 'object' === typeof obj;
-	}
-
-	module.exports = isObject;
-
-
-/***/ },
-/* 3 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	__webpack_require__(7);
-
-	var cb = __webpack_require__(4);
-	cb();
-
-/***/ },
-/* 4 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	module.exports = function () {
-		//config
-		var Vue = __webpack_require__(16);
-		var request = __webpack_require__(8);
-		Vue.config.delimiters = ['${', '}'];
-
-		var vm = new Vue({
-			el: "body",
-			data: {
-				ques: '',
-				myques: []
-			},
-			methods: {
-				ask: function ask() {
-					var text = this.ques.trim();
-					var url = '/' + text;
-					if (text) {
-						(function () {
-							var getcontent = function getcontent() {
-								request.get(url).end(function (err, res) {
-									if (err) throw err;
-									var tag = res.body.tag;
-									var get = res.body.content;
-									vm.myques.push({ text: text, tag: tag, bot: get, largepic: false });
-									vm.ques = '';
-									vm.$nextTick(function () {
-										vm.$els.content.scrollTop = vm.$els.content.scrollHeight;
-									});
-								});
-							};
-
-							request.post(url).send({ text: text }).end(function (err, res) {
-								if (err) {
-									console.log(err);
-								} else {
-									getcontent();
-								}
-							});
-						})();
-					}
-				},
-				largepic: function largepic(myque) {
-					myque.largepic = true;
-				},
-				close: function close(myque) {
-					myque.largepic = false;
-				}
-			}
-		});
-	};
-
-/***/ },
-/* 5 */
-/***/ function(module, exports) {
-
-	/*
-		MIT License http://www.opensource.org/licenses/mit-license.php
-		Author Tobias Koppers @sokra
-	*/
-	// css base code, injected by the css-loader
-	module.exports = function() {
-		var list = [];
-
-		// return the list of modules as css string
-		list.toString = function toString() {
-			var result = [];
-			for(var i = 0; i < this.length; i++) {
-				var item = this[i];
-				if(item[2]) {
-					result.push("@media " + item[2] + "{" + item[1] + "}");
-				} else {
-					result.push(item[1]);
-				}
-			}
-			return result.join("");
-		};
-
-		// import a list of modules into the list
-		list.i = function(modules, mediaQuery) {
-			if(typeof modules === "string")
-				modules = [[null, modules, ""]];
-			var alreadyImportedModules = {};
-			for(var i = 0; i < this.length; i++) {
-				var id = this[i][0];
-				if(typeof id === "number")
-					alreadyImportedModules[id] = true;
-			}
-			for(i = 0; i < modules.length; i++) {
-				var item = modules[i];
-				// skip already imported module
-				// this implementation is not 100% perfect for weird media query combinations
-				//  when a module is imported multiple times with different media queries.
-				//  I hope this will never occur (Hey this way we have smaller bundles)
-				if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
-					if(mediaQuery && !item[2]) {
-						item[2] = mediaQuery;
-					} else if(mediaQuery) {
-						item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
-					}
-					list.push(item);
-				}
-			}
-		};
-		return list;
-	};
-
-
-/***/ },
-/* 6 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/*
-		MIT License http://www.opensource.org/licenses/mit-license.php
-		Author Tobias Koppers @sokra
-	*/
-	var stylesInDom = {},
-		memoize = function(fn) {
-			var memo;
-			return function () {
-				if (typeof memo === "undefined") memo = fn.apply(this, arguments);
-				return memo;
-			};
-		},
-		isOldIE = memoize(function() {
-			return /msie [6-9]\b/.test(window.navigator.userAgent.toLowerCase());
-		}),
-		getHeadElement = memoize(function () {
-			return document.head || document.getElementsByTagName("head")[0];
-		}),
-		singletonElement = null,
-		singletonCounter = 0,
-		styleElementsInsertedAtTop = [];
-
-	module.exports = function(list, options) {
-		if(false) {
-			if(typeof document !== "object") throw new Error("The style-loader cannot be used in a non-browser environment");
-		}
-
-		options = options || {};
-		// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
-		// tags it will allow on a page
-		if (typeof options.singleton === "undefined") options.singleton = isOldIE();
-
-		// By default, add <style> tags to the bottom of <head>.
-		if (typeof options.insertAt === "undefined") options.insertAt = "bottom";
-
-		var styles = listToStyles(list);
-		addStylesToDom(styles, options);
-
-		return function update(newList) {
-			var mayRemove = [];
-			for(var i = 0; i < styles.length; i++) {
-				var item = styles[i];
-				var domStyle = stylesInDom[item.id];
-				domStyle.refs--;
-				mayRemove.push(domStyle);
-			}
-			if(newList) {
-				var newStyles = listToStyles(newList);
-				addStylesToDom(newStyles, options);
-			}
-			for(var i = 0; i < mayRemove.length; i++) {
-				var domStyle = mayRemove[i];
-				if(domStyle.refs === 0) {
-					for(var j = 0; j < domStyle.parts.length; j++)
-						domStyle.parts[j]();
-					delete stylesInDom[domStyle.id];
-				}
-			}
-		};
-	}
-
-	function addStylesToDom(styles, options) {
-		for(var i = 0; i < styles.length; i++) {
-			var item = styles[i];
-			var domStyle = stylesInDom[item.id];
-			if(domStyle) {
-				domStyle.refs++;
-				for(var j = 0; j < domStyle.parts.length; j++) {
-					domStyle.parts[j](item.parts[j]);
-				}
-				for(; j < item.parts.length; j++) {
-					domStyle.parts.push(addStyle(item.parts[j], options));
-				}
-			} else {
-				var parts = [];
-				for(var j = 0; j < item.parts.length; j++) {
-					parts.push(addStyle(item.parts[j], options));
-				}
-				stylesInDom[item.id] = {id: item.id, refs: 1, parts: parts};
-			}
-		}
-	}
-
-	function listToStyles(list) {
-		var styles = [];
-		var newStyles = {};
-		for(var i = 0; i < list.length; i++) {
-			var item = list[i];
-			var id = item[0];
-			var css = item[1];
-			var media = item[2];
-			var sourceMap = item[3];
-			var part = {css: css, media: media, sourceMap: sourceMap};
-			if(!newStyles[id])
-				styles.push(newStyles[id] = {id: id, parts: [part]});
-			else
-				newStyles[id].parts.push(part);
-		}
-		return styles;
-	}
-
-	function insertStyleElement(options, styleElement) {
-		var head = getHeadElement();
-		var lastStyleElementInsertedAtTop = styleElementsInsertedAtTop[styleElementsInsertedAtTop.length - 1];
-		if (options.insertAt === "top") {
-			if(!lastStyleElementInsertedAtTop) {
-				head.insertBefore(styleElement, head.firstChild);
-			} else if(lastStyleElementInsertedAtTop.nextSibling) {
-				head.insertBefore(styleElement, lastStyleElementInsertedAtTop.nextSibling);
-			} else {
-				head.appendChild(styleElement);
-			}
-			styleElementsInsertedAtTop.push(styleElement);
-		} else if (options.insertAt === "bottom") {
-			head.appendChild(styleElement);
-		} else {
-			throw new Error("Invalid value for parameter 'insertAt'. Must be 'top' or 'bottom'.");
-		}
-	}
-
-	function removeStyleElement(styleElement) {
-		styleElement.parentNode.removeChild(styleElement);
-		var idx = styleElementsInsertedAtTop.indexOf(styleElement);
-		if(idx >= 0) {
-			styleElementsInsertedAtTop.splice(idx, 1);
-		}
-	}
-
-	function createStyleElement(options) {
-		var styleElement = document.createElement("style");
-		styleElement.type = "text/css";
-		insertStyleElement(options, styleElement);
-		return styleElement;
-	}
-
-	function createLinkElement(options) {
-		var linkElement = document.createElement("link");
-		linkElement.rel = "stylesheet";
-		insertStyleElement(options, linkElement);
-		return linkElement;
-	}
-
-	function addStyle(obj, options) {
-		var styleElement, update, remove;
-
-		if (options.singleton) {
-			var styleIndex = singletonCounter++;
-			styleElement = singletonElement || (singletonElement = createStyleElement(options));
-			update = applyToSingletonTag.bind(null, styleElement, styleIndex, false);
-			remove = applyToSingletonTag.bind(null, styleElement, styleIndex, true);
-		} else if(obj.sourceMap &&
-			typeof URL === "function" &&
-			typeof URL.createObjectURL === "function" &&
-			typeof URL.revokeObjectURL === "function" &&
-			typeof Blob === "function" &&
-			typeof btoa === "function") {
-			styleElement = createLinkElement(options);
-			update = updateLink.bind(null, styleElement);
-			remove = function() {
-				removeStyleElement(styleElement);
-				if(styleElement.href)
-					URL.revokeObjectURL(styleElement.href);
-			};
-		} else {
-			styleElement = createStyleElement(options);
-			update = applyToTag.bind(null, styleElement);
-			remove = function() {
-				removeStyleElement(styleElement);
-			};
-		}
-
-		update(obj);
-
-		return function updateStyle(newObj) {
-			if(newObj) {
-				if(newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap)
-					return;
-				update(obj = newObj);
-			} else {
-				remove();
-			}
-		};
-	}
-
-	var replaceText = (function () {
-		var textStore = [];
-
-		return function (index, replacement) {
-			textStore[index] = replacement;
-			return textStore.filter(Boolean).join('\n');
-		};
-	})();
-
-	function applyToSingletonTag(styleElement, index, remove, obj) {
-		var css = remove ? "" : obj.css;
-
-		if (styleElement.styleSheet) {
-			styleElement.styleSheet.cssText = replaceText(index, css);
-		} else {
-			var cssNode = document.createTextNode(css);
-			var childNodes = styleElement.childNodes;
-			if (childNodes[index]) styleElement.removeChild(childNodes[index]);
-			if (childNodes.length) {
-				styleElement.insertBefore(cssNode, childNodes[index]);
-			} else {
-				styleElement.appendChild(cssNode);
-			}
-		}
-	}
-
-	function applyToTag(styleElement, obj) {
-		var css = obj.css;
-		var media = obj.media;
-
-		if(media) {
-			styleElement.setAttribute("media", media)
-		}
-
-		if(styleElement.styleSheet) {
-			styleElement.styleSheet.cssText = css;
-		} else {
-			while(styleElement.firstChild) {
-				styleElement.removeChild(styleElement.firstChild);
-			}
-			styleElement.appendChild(document.createTextNode(css));
-		}
-	}
-
-	function updateLink(linkElement, obj) {
-		var css = obj.css;
-		var sourceMap = obj.sourceMap;
-
-		if(sourceMap) {
-			// http://stackoverflow.com/a/26603875
-			css += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
-		}
-
-		var blob = new Blob([css], { type: "text/css" });
-
-		var oldSrc = linkElement.href;
-
-		linkElement.href = URL.createObjectURL(blob);
-
-		if(oldSrc)
-			URL.revokeObjectURL(oldSrc);
-	}
-
-
-/***/ },
-/* 7 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(1);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(6)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(true) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept(1, function() {
-				var newContent = __webpack_require__(1);
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 8 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -1039,9 +618,9 @@
 	  root = this;
 	}
 
-	var Emitter = __webpack_require__(11);
-	var requestBase = __webpack_require__(9);
-	var isObject = __webpack_require__(2);
+	var Emitter = __webpack_require__(13);
+	var requestBase = __webpack_require__(11);
+	var isObject = __webpack_require__(3);
 
 	/**
 	 * Noop.
@@ -1053,7 +632,7 @@
 	 * Expose `request`.
 	 */
 
-	var request = module.exports = __webpack_require__(10).bind(null, Request);
+	var request = module.exports = __webpack_require__(12).bind(null, Request);
 
 	/**
 	 * Determine XHR.
@@ -2002,591 +1581,26 @@
 
 
 /***/ },
-/* 9 */
-/***/ function(module, exports, __webpack_require__) {
+/* 3 */
+/***/ function(module, exports) {
 
 	/**
-	 * Module of mixed-in functions shared between node and client code
-	 */
-	var isObject = __webpack_require__(2);
-
-	/**
-	 * Clear previous timeout.
-	 *
-	 * @return {Request} for chaining
-	 * @api public
-	 */
-
-	exports.clearTimeout = function _clearTimeout(){
-	  this._timeout = 0;
-	  clearTimeout(this._timer);
-	  return this;
-	};
-
-	/**
-	 * Override default response body parser
-	 *
-	 * This function will be called to convert incoming data into request.body
-	 *
-	 * @param {Function}
-	 * @api public
-	 */
-
-	exports.parse = function parse(fn){
-	  this._parser = fn;
-	  return this;
-	};
-
-	/**
-	 * Override default request body serializer
-	 *
-	 * This function will be called to convert data set via .send or .attach into payload to send
-	 *
-	 * @param {Function}
-	 * @api public
-	 */
-
-	exports.serialize = function serialize(fn){
-	  this._serializer = fn;
-	  return this;
-	};
-
-	/**
-	 * Set timeout to `ms`.
-	 *
-	 * @param {Number} ms
-	 * @return {Request} for chaining
-	 * @api public
-	 */
-
-	exports.timeout = function timeout(ms){
-	  this._timeout = ms;
-	  return this;
-	};
-
-	/**
-	 * Promise support
-	 *
-	 * @param {Function} resolve
-	 * @param {Function} reject
-	 * @return {Request}
-	 */
-
-	exports.then = function then(resolve, reject) {
-	  if (!this._fullfilledPromise) {
-	    var self = this;
-	    this._fullfilledPromise = new Promise(function(innerResolve, innerReject){
-	      self.end(function(err, res){
-	        if (err) innerReject(err); else innerResolve(res);
-	      });
-	    });
-	  }
-	  return this._fullfilledPromise.then(resolve, reject);
-	}
-
-	/**
-	 * Allow for extension
-	 */
-
-	exports.use = function use(fn) {
-	  fn(this);
-	  return this;
-	}
-
-
-	/**
-	 * Get request header `field`.
-	 * Case-insensitive.
-	 *
-	 * @param {String} field
-	 * @return {String}
-	 * @api public
-	 */
-
-	exports.get = function(field){
-	  return this._header[field.toLowerCase()];
-	};
-
-	/**
-	 * Get case-insensitive header `field` value.
-	 * This is a deprecated internal API. Use `.get(field)` instead.
-	 *
-	 * (getHeader is no longer used internally by the superagent code base)
-	 *
-	 * @param {String} field
-	 * @return {String}
-	 * @api private
-	 * @deprecated
-	 */
-
-	exports.getHeader = exports.get;
-
-	/**
-	 * Set header `field` to `val`, or multiple fields with one object.
-	 * Case-insensitive.
-	 *
-	 * Examples:
-	 *
-	 *      req.get('/')
-	 *        .set('Accept', 'application/json')
-	 *        .set('X-API-Key', 'foobar')
-	 *        .end(callback);
-	 *
-	 *      req.get('/')
-	 *        .set({ Accept: 'application/json', 'X-API-Key': 'foobar' })
-	 *        .end(callback);
-	 *
-	 * @param {String|Object} field
-	 * @param {String} val
-	 * @return {Request} for chaining
-	 * @api public
-	 */
-
-	exports.set = function(field, val){
-	  if (isObject(field)) {
-	    for (var key in field) {
-	      this.set(key, field[key]);
-	    }
-	    return this;
-	  }
-	  this._header[field.toLowerCase()] = val;
-	  this.header[field] = val;
-	  return this;
-	};
-
-	/**
-	 * Remove header `field`.
-	 * Case-insensitive.
-	 *
-	 * Example:
-	 *
-	 *      req.get('/')
-	 *        .unset('User-Agent')
-	 *        .end(callback);
-	 *
-	 * @param {String} field
-	 */
-	exports.unset = function(field){
-	  delete this._header[field.toLowerCase()];
-	  delete this.header[field];
-	  return this;
-	};
-
-	/**
-	 * Write the field `name` and `val` for "multipart/form-data"
-	 * request bodies.
-	 *
-	 * ``` js
-	 * request.post('/upload')
-	 *   .field('foo', 'bar')
-	 *   .end(callback);
-	 * ```
-	 *
-	 * @param {String} name
-	 * @param {String|Blob|File|Buffer|fs.ReadStream} val
-	 * @return {Request} for chaining
-	 * @api public
-	 */
-	exports.field = function(name, val) {
-	  this._getFormData().append(name, val);
-	  return this;
-	};
-
-	/**
-	 * Abort the request, and clear potential timeout.
-	 *
-	 * @return {Request}
-	 * @api public
-	 */
-	exports.abort = function(){
-	  if (this._aborted) {
-	    return this;
-	  }
-	  this._aborted = true;
-	  this.xhr && this.xhr.abort(); // browser
-	  this.req && this.req.abort(); // node
-	  this.clearTimeout();
-	  this.emit('abort');
-	  return this;
-	};
-
-	/**
-	 * Enable transmission of cookies with x-domain requests.
-	 *
-	 * Note that for this to work the origin must not be
-	 * using "Access-Control-Allow-Origin" with a wildcard,
-	 * and also must set "Access-Control-Allow-Credentials"
-	 * to "true".
-	 *
-	 * @api public
-	 */
-
-	exports.withCredentials = function(){
-	  // This is browser-only functionality. Node side is no-op.
-	  this._withCredentials = true;
-	  return this;
-	};
-
-	/**
-	 * Set the max redirects to `n`. Does noting in browser XHR implementation.
-	 *
-	 * @param {Number} n
-	 * @return {Request} for chaining
-	 * @api public
-	 */
-
-	exports.redirects = function(n){
-	  this._maxRedirects = n;
-	  return this;
-	};
-
-	/**
-	 * Convert to a plain javascript object (not JSON string) of scalar properties.
-	 * Note as this method is designed to return a useful non-this value,
-	 * it cannot be chained.
-	 *
-	 * @return {Object} describing method, url, and data of this request
-	 * @api public
-	 */
-
-	exports.toJSON = function(){
-	  return {
-	    method: this.method,
-	    url: this.url,
-	    data: this._data,
-	    headers: this._header
-	  };
-	};
-
-	/**
-	 * Check if `obj` is a host object,
-	 * we don't want to serialize these :)
-	 *
-	 * TODO: future proof, move to compoent land
+	 * Check if `obj` is an object.
 	 *
 	 * @param {Object} obj
 	 * @return {Boolean}
 	 * @api private
 	 */
 
-	exports._isHost = function _isHost(obj) {
-	  var str = {}.toString.call(obj);
-
-	  switch (str) {
-	    case '[object File]':
-	    case '[object Blob]':
-	    case '[object FormData]':
-	      return true;
-	    default:
-	      return false;
-	  }
+	function isObject(obj) {
+	  return null !== obj && 'object' === typeof obj;
 	}
 
-	/**
-	 * Send `data` as the request body, defaulting the `.type()` to "json" when
-	 * an object is given.
-	 *
-	 * Examples:
-	 *
-	 *       // manual json
-	 *       request.post('/user')
-	 *         .type('json')
-	 *         .send('{"name":"tj"}')
-	 *         .end(callback)
-	 *
-	 *       // auto json
-	 *       request.post('/user')
-	 *         .send({ name: 'tj' })
-	 *         .end(callback)
-	 *
-	 *       // manual x-www-form-urlencoded
-	 *       request.post('/user')
-	 *         .type('form')
-	 *         .send('name=tj')
-	 *         .end(callback)
-	 *
-	 *       // auto x-www-form-urlencoded
-	 *       request.post('/user')
-	 *         .type('form')
-	 *         .send({ name: 'tj' })
-	 *         .end(callback)
-	 *
-	 *       // defaults to x-www-form-urlencoded
-	 *      request.post('/user')
-	 *        .send('name=tobi')
-	 *        .send('species=ferret')
-	 *        .end(callback)
-	 *
-	 * @param {String|Object} data
-	 * @return {Request} for chaining
-	 * @api public
-	 */
-
-	exports.send = function(data){
-	  var obj = isObject(data);
-	  var type = this._header['content-type'];
-
-	  // merge
-	  if (obj && isObject(this._data)) {
-	    for (var key in data) {
-	      this._data[key] = data[key];
-	    }
-	  } else if ('string' == typeof data) {
-	    // default to x-www-form-urlencoded
-	    if (!type) this.type('form');
-	    type = this._header['content-type'];
-	    if ('application/x-www-form-urlencoded' == type) {
-	      this._data = this._data
-	        ? this._data + '&' + data
-	        : data;
-	    } else {
-	      this._data = (this._data || '') + data;
-	    }
-	  } else {
-	    this._data = data;
-	  }
-
-	  if (!obj || this._isHost(data)) return this;
-
-	  // default to json
-	  if (!type) this.type('json');
-	  return this;
-	};
+	module.exports = isObject;
 
 
 /***/ },
-/* 10 */
-/***/ function(module, exports) {
-
-	// The node and browser modules expose versions of this with the
-	// appropriate constructor function bound as first argument
-	/**
-	 * Issue a request:
-	 *
-	 * Examples:
-	 *
-	 *    request('GET', '/users').end(callback)
-	 *    request('/users').end(callback)
-	 *    request('/users', callback)
-	 *
-	 * @param {String} method
-	 * @param {String|Function} url or callback
-	 * @return {Request}
-	 * @api public
-	 */
-
-	function request(RequestConstructor, method, url) {
-	  // callback
-	  if ('function' == typeof url) {
-	    return new RequestConstructor('GET', method).end(url);
-	  }
-
-	  // url first
-	  if (2 == arguments.length) {
-	    return new RequestConstructor('GET', method);
-	  }
-
-	  return new RequestConstructor(method, url);
-	}
-
-	module.exports = request;
-
-
-/***/ },
-/* 11 */
-/***/ function(module, exports, __webpack_require__) {
-
-	
-	/**
-	 * Expose `Emitter`.
-	 */
-
-	if (true) {
-	  module.exports = Emitter;
-	}
-
-	/**
-	 * Initialize a new `Emitter`.
-	 *
-	 * @api public
-	 */
-
-	function Emitter(obj) {
-	  if (obj) return mixin(obj);
-	};
-
-	/**
-	 * Mixin the emitter properties.
-	 *
-	 * @param {Object} obj
-	 * @return {Object}
-	 * @api private
-	 */
-
-	function mixin(obj) {
-	  for (var key in Emitter.prototype) {
-	    obj[key] = Emitter.prototype[key];
-	  }
-	  return obj;
-	}
-
-	/**
-	 * Listen on the given `event` with `fn`.
-	 *
-	 * @param {String} event
-	 * @param {Function} fn
-	 * @return {Emitter}
-	 * @api public
-	 */
-
-	Emitter.prototype.on =
-	Emitter.prototype.addEventListener = function(event, fn){
-	  this._callbacks = this._callbacks || {};
-	  (this._callbacks['$' + event] = this._callbacks['$' + event] || [])
-	    .push(fn);
-	  return this;
-	};
-
-	/**
-	 * Adds an `event` listener that will be invoked a single
-	 * time then automatically removed.
-	 *
-	 * @param {String} event
-	 * @param {Function} fn
-	 * @return {Emitter}
-	 * @api public
-	 */
-
-	Emitter.prototype.once = function(event, fn){
-	  function on() {
-	    this.off(event, on);
-	    fn.apply(this, arguments);
-	  }
-
-	  on.fn = fn;
-	  this.on(event, on);
-	  return this;
-	};
-
-	/**
-	 * Remove the given callback for `event` or all
-	 * registered callbacks.
-	 *
-	 * @param {String} event
-	 * @param {Function} fn
-	 * @return {Emitter}
-	 * @api public
-	 */
-
-	Emitter.prototype.off =
-	Emitter.prototype.removeListener =
-	Emitter.prototype.removeAllListeners =
-	Emitter.prototype.removeEventListener = function(event, fn){
-	  this._callbacks = this._callbacks || {};
-
-	  // all
-	  if (0 == arguments.length) {
-	    this._callbacks = {};
-	    return this;
-	  }
-
-	  // specific event
-	  var callbacks = this._callbacks['$' + event];
-	  if (!callbacks) return this;
-
-	  // remove all handlers
-	  if (1 == arguments.length) {
-	    delete this._callbacks['$' + event];
-	    return this;
-	  }
-
-	  // remove specific handler
-	  var cb;
-	  for (var i = 0; i < callbacks.length; i++) {
-	    cb = callbacks[i];
-	    if (cb === fn || cb.fn === fn) {
-	      callbacks.splice(i, 1);
-	      break;
-	    }
-	  }
-	  return this;
-	};
-
-	/**
-	 * Emit `event` with the given args.
-	 *
-	 * @param {String} event
-	 * @param {Mixed} ...
-	 * @return {Emitter}
-	 */
-
-	Emitter.prototype.emit = function(event){
-	  this._callbacks = this._callbacks || {};
-	  var args = [].slice.call(arguments, 1)
-	    , callbacks = this._callbacks['$' + event];
-
-	  if (callbacks) {
-	    callbacks = callbacks.slice(0);
-	    for (var i = 0, len = callbacks.length; i < len; ++i) {
-	      callbacks[i].apply(this, args);
-	    }
-	  }
-
-	  return this;
-	};
-
-	/**
-	 * Return array of callbacks for `event`.
-	 *
-	 * @param {String} event
-	 * @return {Array}
-	 * @api public
-	 */
-
-	Emitter.prototype.listeners = function(event){
-	  this._callbacks = this._callbacks || {};
-	  return this._callbacks['$' + event] || [];
-	};
-
-	/**
-	 * Check if this emitter has `event` handlers.
-	 *
-	 * @param {String} event
-	 * @return {Boolean}
-	 * @api public
-	 */
-
-	Emitter.prototype.hasListeners = function(event){
-	  return !! this.listeners(event).length;
-	};
-
-
-/***/ },
-/* 12 */
-/***/ function(module, exports) {
-
-	module.exports = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAD6APoAAD/4QD6RXhpZgAATU0AKgAAAAgABwESAAMAAAABAAEAAAEaAAUAAAABAAAAYgEbAAUAAAABAAAAagEoAAMAAAABAAIAAAExAAIAAAAiAAAAcgEyAAIAAAAUAAAAlIdpAAQAAAABAAAAqAAAAAAAAAPoAAAAAQAAA+gAAAABQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpADIwMTY6MDc6MjAgMTU6NDU6MjMAAASQBAACAAAAFAAAAN6gAQADAAAAAQABAACgAgAEAAAAAQAAACigAwAEAAAAAQAAACgAAAAAMjAxNjowNzoxNiAyMzowNjowOQD/4RLKaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJYTVAgQ29yZSA1LjQuMCI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1wOk1vZGlmeURhdGU9IjIwMTYtMDctMjBUMTU6NDU6MjMrMDg6MDAiIHhtcDpDcmVhdGVEYXRlPSIyMDE2LTA3LTE2VDIzOjA2OjA5KzA4OjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDE2LTA3LTIwVDE1OjQ1OjIzKzA4OjAwIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE1IChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpmMzI2MTllNC02NjMwLTkxNGQtYTMwYy1lNTMwY2NhMmUyNmIiIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDplYTc4NzNiNy00ZTRkLTExZTYtODlmZC1kYzQ1OTU1Y2Y1M2YiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDozZGYwZWVlMC05YzE3LTkyNDEtYmU0Yy1lYjAyY2YxNmY2ZWMiIGRjOmZvcm1hdD0iaW1hZ2UvanBlZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjE5NTU3OGU2LWU5NDctZGM0MC05NTg0LTQ2NmNhOTFmNmJkZCIgc3RSZWY6b3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjNkZjBlZWUwLTljMTctOTI0MS1iZTRjLWViMDJjZjE2ZjZlYyIgc3RSZWY6ZG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOmZlM2Y1YmI0LTRlM2QtMTFlNi1iNThkLWYxYzE4NmUzMGNmNCIvPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiBzdEV2dDp3aGVuPSIyMDE2LTA3LTE2VDIzOjA2OjA5KzA4OjAwIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjNkZjBlZWUwLTljMTctOTI0MS1iZTRjLWViMDJjZjE2ZjZlYyIgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjb252ZXJ0ZWQiIHN0RXZ0OnBhcmFtZXRlcnM9ImZyb20gaW1hZ2UvcG5nIHRvIGFwcGxpY2F0aW9uL3ZuZC5hZG9iZS5waG90b3Nob3AiLz4gPHJkZjpsaSBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxNSAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iIHN0RXZ0OndoZW49IjIwMTYtMDctMjBUMTM6NTE6NTcrMDg6MDAiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6YjhkMWY5MzMtNDAwMC04YTQzLTg5ZjctNjM5YTBlMjc3OWIzIiBzdEV2dDphY3Rpb249InNhdmVkIi8+IDxyZGY6bGkgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiBzdEV2dDpjaGFuZ2VkPSIvIiBzdEV2dDp3aGVuPSIyMDE2LTA3LTIwVDE1OjQ1OjIzKzA4OjAwIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjE5NTU3OGU2LWU5NDctZGM0MC05NTg0LTQ2NmNhOTFmNmJkZCIgc3RFdnQ6YWN0aW9uPSJzYXZlZCIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY29udmVydGVkIiBzdEV2dDpwYXJhbWV0ZXJzPSJmcm9tIGFwcGxpY2F0aW9uL3ZuZC5hZG9iZS5waG90b3Nob3AgdG8gaW1hZ2UvanBlZyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iZGVyaXZlZCIgc3RFdnQ6cGFyYW1ldGVycz0iY29udmVydGVkIGZyb20gYXBwbGljYXRpb24vdm5kLmFkb2JlLnBob3Rvc2hvcCB0byBpbWFnZS9qcGVnIi8+IDxyZGY6bGkgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiBzdEV2dDpjaGFuZ2VkPSIvIiBzdEV2dDp3aGVuPSIyMDE2LTA3LTIwVDE1OjQ1OjIzKzA4OjAwIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOmYzMjYxOWU0LTY2MzAtOTE0ZC1hMzBjLWU1MzBjY2EyZTI2YiIgc3RFdnQ6YWN0aW9uPSJzYXZlZCIvPiA8L3JkZjpTZXE+IDwveG1wTU06SGlzdG9yeT4gPHBob3Rvc2hvcDpUZXh0TGF5ZXJzPiA8cmRmOkJhZz4gPHJkZjpsaSBwaG90b3Nob3A6TGF5ZXJOYW1lPSJNdVhJIiBwaG90b3Nob3A6TGF5ZXJUZXh0PSJNdVhJIi8+IDwvcmRmOkJhZz4gPC9waG90b3Nob3A6VGV4dExheWVycz4gPHBob3Rvc2hvcDpEb2N1bWVudEFuY2VzdG9ycz4gPHJkZjpCYWc+IDxyZGY6bGk+eG1wLmRpZDpjNmVhYzdmMy03N2NjLTNkNDgtYWI2OC02NjY4MWI3NjkwNmY8L3JkZjpsaT4gPC9yZGY6QmFnPiA8L3Bob3Rvc2hvcDpEb2N1bWVudEFuY2VzdG9ycz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPD94cGFja2V0IGVuZD0idyI/PgD/7QBkUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAACwcAVoAAxslRxwCAAACAAIcAj4ACDIwMTYwNzE2HAI/AAsyMzA2MDkrMDgwMDhCSU0EJQAAAAAAEAbTudEfNTS3btLB/WemSDn/wAARCAAoACgDAREAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ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"
-
-/***/ },
-/* 13 */
-/***/ function(module, exports) {
-
-	module.exports = "data:image/png;base64,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"
-
-/***/ },
-/* 14 */
-/***/ function(module, exports) {
-
-	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpEMTg3QkVCMDQ0RjYxMUU2QjUyNUY0N0U0NkI4MzQ4OCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpEMTg3QkVCMTQ0RjYxMUU2QjUyNUY0N0U0NkI4MzQ4OCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkI1OEJFRUZGNDRGMjExRTZCNTI1RjQ3RTQ2QjgzNDg4IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkI1OEJFRjAwNDRGMjExRTZCNTI1RjQ3RTQ2QjgzNDg4Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+wwnR/QAAAORQTFRFnN/AVcmHfdWsVMiEUciAXcuPruXKZc2XlNy6UsiCfdWrTcd6subMY8yVa9CeqOPH0PDdac6aZ82ZcNGhT8d8ouHDUciBidm0V8mIze/cyu7Zas+cnd/Aq+TJu+nTs+bPetSpctGix+3YvurPdNKkkNu5VcmGze/bdtOmYMuSj9u5T8d+9/z+qOPCW8qNbdCfn+DCl9289Pv+XMqPxOzWt+jRr+XLpeLFdtOlaM6ahNexzu/boODBjNm1vOnSxu3YuejQt+fOh9iyhNeww+vWYcyU7/n9WcmKoeDEx+3XTcd5////B1oMJgAAAEx0Uk5T////////////////////////////////////////////////////////////////////////////////////////////////////AJ6N5MwAAAESSURBVHjadNHXloIwEAbgICCiYtddy/bee+9Vd/73f5/NMSGZmMNcwJz5ApNMBAriekIEiALtp1TMLxlRIYuEqIhbcaiRMo/rXbJRXeDbL+LRcPhpw0GqCc7tyFU6QM6botcz5eRevYOc+0fsowBjlYwVf8b8lykauvV8BGeZ03AAkBmKZHc70QhTh++WmZ6/ta7yPITqXQ/yygSomqWvyHdeUQWZj8xSejcM0VX6N7CNPiwDzWZZPsvsPvY4q/uqWX6Gx/wQFZ8DxjsOH4Y3wIrVn2+H94nWttjW1uFwSZZOT4AlzQ8+UwnGL3zeXZ2PsC3TGB6nQ5139H0w3qZoaA6YRJ0FfqSZPf/x76XO/gUYADIT7gSgDNcgAAAAAElFTkSuQmCC"
-
-/***/ },
-/* 15 */
-/***/ function(module, exports) {
-
-	module.exports = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAASABIAAD/4QESRXhpZgAATU0AKgAAAAgACAEGAAMAAAABAAIAAAESAAMAAAABAAEAAAEaAAUAAAABAAAAbgEbAAUAAAABAAAAdgEoAAMAAAABAAIAAAExAAIAAAAiAAAAfgEyAAIAAAAUAAAAoIdpAAQAAAABAAAAtAAAAAAAAABIAAAAAQAAAEgAAAABQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpADIwMTY6MDc6MjAgMTU6MzU6MzYAAAWQAAAHAAAABDAyMjGQBAACAAAAFAAAAPagAQADAAAAAQABAACgAgAEAAAAAQAAACigAwAEAAAAAQAAACgAAAAAMjAxNjowNzoyMCAxNDowMjowOAD/4RanaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJYTVAgQ29yZSA1LjQuMCI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1wOk1vZGlmeURhdGU9IjIwMTYtMDctMjBUMTU6MzU6MzYrMDg6MDAiIHhtcDpDcmVhdGVEYXRlPSIyMDE2LTA3LTIwVDE0OjAyOjA4KzA4OjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDE2LTA3LTIwVDE1OjM1OjM2KzA4OjAwIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE1IChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NjgzN2FjZS1kMmU5LWE2NGQtOTA1Yi1mMjA0NWIwNWNmZjYiIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDo4MzQ3MWQ0OS00ZTRjLTExZTYtODlmZC1kYzQ1OTU1Y2Y1M2YiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo2MzI4YjNkMC04Njc1LWM5NDAtOGY4Zi0yMGYxOTBhNDEzZWUiIGRjOmZvcm1hdD0iaW1hZ2UvanBlZyIgcGhvdG9zaG9wOkxlZ2FjeUlQVENEaWdlc3Q9IkNEQ0ZGQTdEQThDN0JFMDkwNTcwNzZBRUFGMDVDMzRFIiBwaG90b3Nob3A6SUNDUHJvZmlsZT0ic1JHQiBJRUM2MTk2Ni0yLjEiIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2Y2E1Y2ZiMC1iZjkyLWYxNDAtOTFmNi02ZTQwZDUwZTEyNzgiIHN0UmVmOm9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo2MzI4YjNkMC04Njc1LWM5NDAtOGY4Zi0yMGYxOTBhNDEzZWUiIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MGFiNjU2ZmMtNDk1NS1mMDQzLTk1NTEtNWIzNzFkYzk3YzU4Ii8+IDx4bXBNTTpIaXN0b3J5PiA8cmRmOlNlcT4gPHJkZjpsaSBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxNSAoV2luZG93cykiIHN0RXZ0OndoZW49IjIwMTYtMDctMjBUMTQ6MDI6MDgrMDg6MDAiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6NjMyOGIzZDAtODY3NS1jOTQwLThmOGYtMjBmMTkwYTQxM2VlIiBzdEV2dDphY3Rpb249ImNyZWF0ZWQiLz4gPHJkZjpsaSBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxNSAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iIHN0RXZ0OndoZW49IjIwMTYtMDctMjBUMTU6MTE6MjIrMDg6MDAiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6ZWE0OTk5NGMtYTM3NC04ZjQzLWJiYWMtYzc2NDRjMjE4ZThmIiBzdEV2dDphY3Rpb249InNhdmVkIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjb252ZXJ0ZWQiIHN0RXZ0OnBhcmFtZXRlcnM9ImZyb20gYXBwbGljYXRpb24vdm5kLmFkb2JlLnBob3Rvc2hvcCB0byBpbWFnZS9qcGVnIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJkZXJpdmVkIiBzdEV2dDpwYXJhbWV0ZXJzPSJjb252ZXJ0ZWQgZnJvbSBhcHBsaWNhdGlvbi92bmQuYWRvYmUucGhvdG9zaG9wIHRvIGltYWdlL2pwZWciLz4gPHJkZjpsaSBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxNSAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iIHN0RXZ0OndoZW49IjIwMTYtMDctMjBUMTU6MTE6MjIrMDg6MDAiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6MzFhYTYwNzMtYWQ2NC1kOTRkLTg2YTQtNTVjMzI3ZTczYWI2IiBzdEV2dDphY3Rpb249InNhdmVkIi8+IDxyZGY6bGkgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiBzdEV2dDpjaGFuZ2VkPSIvIiBzdEV2dDp3aGVuPSIyMDE2LTA3LTIwVDE1OjEzOjAxKzA4OjAwIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjM3NTZkYmJlLTc3ZjUtM2Y0Zi05MWIwLWEzOTE1MzUwM2M1YiIgc3RFdnQ6YWN0aW9uPSJzYXZlZCIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY29udmVydGVkIiBzdEV2dDpwYXJhbWV0ZXJzPSJmcm9tIGltYWdlL2pwZWcgdG8gYXBwbGljYXRpb24vdm5kLmFkb2JlLnBob3Rvc2hvcCIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iZGVyaXZlZCIgc3RFdnQ6cGFyYW1ldGVycz0iY29udmVydGVkIGZyb20gaW1hZ2UvanBlZyB0byBhcHBsaWNhdGlvbi92bmQuYWRvYmUucGhvdG9zaG9wIi8+IDxyZGY6bGkgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiBzdEV2dDpjaGFuZ2VkPSIvIiBzdEV2dDp3aGVuPSIyMDE2LTA3LTIwVDE1OjEzOjAxKzA4OjAwIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjZjYTVjZmIwLWJmOTItZjE0MC05MWY2LTZlNDBkNTBlMTI3OCIgc3RFdnQ6YWN0aW9uPSJzYXZlZCIvPiA8cmRmOmxpIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE1IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIgc3RFdnQ6d2hlbj0iMjAxNi0wNy0yMFQxNTozNTozNiswODowMCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDowYWI2NTZmYy00OTU1LWYwNDMtOTU1MS01YjM3MWRjOTdjNTgiIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiLz4gPHJkZjpsaSBzdEV2dDphY3Rpb249ImNvbnZlcnRlZCIgc3RFdnQ6cGFyYW1ldGVycz0iZnJvbSBhcHBsaWNhdGlvbi92bmQuYWRvYmUucGhvdG9zaG9wIHRvIGltYWdlL2pwZWciLz4gPHJkZjpsaSBzdEV2dDphY3Rpb249ImRlcml2ZWQiIHN0RXZ0OnBhcmFtZXRlcnM9ImNvbnZlcnRlZCBmcm9tIGFwcGxpY2F0aW9uL3ZuZC5hZG9iZS5waG90b3Nob3AgdG8gaW1hZ2UvanBlZyIvPiA8cmRmOmxpIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE1IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIgc3RFdnQ6d2hlbj0iMjAxNi0wNy0yMFQxNTozNTozNiswODowMCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDo2NjgzN2FjZS1kMmU5LWE2NGQtOTA1Yi1mMjA0NWIwNWNmZjYiIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDxwaG90b3Nob3A6RG9jdW1lbnRBbmNlc3RvcnM+IDxyZGY6QmFnPiA8cmRmOmxpPmFkb2JlOmRvY2lkOnBob3Rvc2hvcDpmZTNmNWJiNC00ZTNkLTExZTYtYjU4ZC1mMWMxODZlMzBjZjQ8L3JkZjpsaT4gPHJkZjpsaT54bXAuZGlkOmM2ZWFjN2YzLTc3Y2MtM2Q0OC1hYjY4LTY2NjgxYjc2OTA2ZjwvcmRmOmxpPiA8L3JkZjpCYWc+IDwvcGhvdG9zaG9wOkRvY3VtZW50QW5jZXN0b3JzPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8P3hwYWNrZXQgZW5kPSJ3Ij8+AP/tAGRQaG90b3Nob3AgMy4wADhCSU0EBAAAAAAALBwBWgADGyVHHAIAAAIAAhwCPgAIMjAxNjA3MjAcAj8ACzE0MDIwOCswODAwOEJJTQQlAAAAAAAQzyN4xNVYZOyPxrLXz+8mmP/AABEIACgAKAMBEQACEQEDEQH/xAAfAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgv/xAC1EAACAQMDAgQDBQUEBAAAAX0BAgMABBEFEiExQQYTUWEHInEUMoGRoQgjQrHB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"
-
-/***/ },
-/* 16 */
+/* 4 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global, process) {/*!
@@ -12663,10 +11677,1373 @@
 	}, 0);
 
 	module.exports = Vue;
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(17)))
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(21)))
+
+/***/ },
+/* 5 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	__webpack_require__(10);
+
+	var cb = __webpack_require__(6);
+	cb();
+
+/***/ },
+/* 6 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	module.exports = function () {
+			//config
+			var Vue = __webpack_require__(4);
+			var request = __webpack_require__(2);
+			Vue.config.delimiters = ['${', '}'];
+			var app = __webpack_require__(20);
+
+			new Vue({
+					el: "#wrap",
+					components: { app: app }
+			});
+	};
+
+/***/ },
+/* 7 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+
+	var request = __webpack_require__(2);
+	exports.default = {
+		data: function data() {
+			return {
+				ques: '',
+				myques: [],
+				index: 1
+			};
+		},
+
+		methods: {
+			ask: function ask() {
+				var text = this.ques.trim();
+				var url = '/' + text;
+				var self = this;
+				if (text) {
+					(function () {
+						var getcontent = function getcontent() {
+							request.get(url).end(function (err, res) {
+								if (err) throw err;
+								var mapindex = self.index;
+								var tag = res.body.tag;
+								var get = res.body.content;
+								self.myques.push({ text: text, tag: tag, bot: get, index: mapindex, largepic: false });
+								if (tag == 'map') {
+									self.index++;
+								}
+								self.ques = '';
+								self.$nextTick(function () {
+									if (tag == 'map') {
+										map(get, mapindex);
+									}
+									self.$els.content.scrollTop = self.$els.content.scrollHeight;
+								});
+							});
+							function map(get, mapindex) {
+								var boxid = 'box-' + mapindex;
+								var mapid = 'map-' + mapindex;
+								var appendmap = document.getElementById(boxid);
+								var mapcontent = document.createElement("div");
+								mapcontent.setAttribute("id", mapid);
+								appendmap.appendChild(mapcontent);
+								var map = new BMap.Map(mapid);
+								map.centerAndZoom(get, 18);
+							}
+						};
+
+						request.post(url).send({ text: text }).end(function (err, res) {
+							if (err) {
+								console.log(err);
+							} else {
+								getcontent();
+							}
+						});
+					})();
+				}
+			},
+			largepic: function largepic(myque) {
+				myque.largepic = true;
+			},
+			close: function close(myque) {
+				myque.largepic = false;
+			}
+		}
+	};
+
+/***/ },
+/* 8 */
+/***/ function(module, exports) {
+
+	/*
+		MIT License http://www.opensource.org/licenses/mit-license.php
+		Author Tobias Koppers @sokra
+	*/
+	// css base code, injected by the css-loader
+	module.exports = function() {
+		var list = [];
+
+		// return the list of modules as css string
+		list.toString = function toString() {
+			var result = [];
+			for(var i = 0; i < this.length; i++) {
+				var item = this[i];
+				if(item[2]) {
+					result.push("@media " + item[2] + "{" + item[1] + "}");
+				} else {
+					result.push(item[1]);
+				}
+			}
+			return result.join("");
+		};
+
+		// import a list of modules into the list
+		list.i = function(modules, mediaQuery) {
+			if(typeof modules === "string")
+				modules = [[null, modules, ""]];
+			var alreadyImportedModules = {};
+			for(var i = 0; i < this.length; i++) {
+				var id = this[i][0];
+				if(typeof id === "number")
+					alreadyImportedModules[id] = true;
+			}
+			for(i = 0; i < modules.length; i++) {
+				var item = modules[i];
+				// skip already imported module
+				// this implementation is not 100% perfect for weird media query combinations
+				//  when a module is imported multiple times with different media queries.
+				//  I hope this will never occur (Hey this way we have smaller bundles)
+				if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
+					if(mediaQuery && !item[2]) {
+						item[2] = mediaQuery;
+					} else if(mediaQuery) {
+						item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
+					}
+					list.push(item);
+				}
+			}
+		};
+		return list;
+	};
+
+
+/***/ },
+/* 9 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/*
+		MIT License http://www.opensource.org/licenses/mit-license.php
+		Author Tobias Koppers @sokra
+	*/
+	var stylesInDom = {},
+		memoize = function(fn) {
+			var memo;
+			return function () {
+				if (typeof memo === "undefined") memo = fn.apply(this, arguments);
+				return memo;
+			};
+		},
+		isOldIE = memoize(function() {
+			return /msie [6-9]\b/.test(window.navigator.userAgent.toLowerCase());
+		}),
+		getHeadElement = memoize(function () {
+			return document.head || document.getElementsByTagName("head")[0];
+		}),
+		singletonElement = null,
+		singletonCounter = 0,
+		styleElementsInsertedAtTop = [];
+
+	module.exports = function(list, options) {
+		if(false) {
+			if(typeof document !== "object") throw new Error("The style-loader cannot be used in a non-browser environment");
+		}
+
+		options = options || {};
+		// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
+		// tags it will allow on a page
+		if (typeof options.singleton === "undefined") options.singleton = isOldIE();
+
+		// By default, add <style> tags to the bottom of <head>.
+		if (typeof options.insertAt === "undefined") options.insertAt = "bottom";
+
+		var styles = listToStyles(list);
+		addStylesToDom(styles, options);
+
+		return function update(newList) {
+			var mayRemove = [];
+			for(var i = 0; i < styles.length; i++) {
+				var item = styles[i];
+				var domStyle = stylesInDom[item.id];
+				domStyle.refs--;
+				mayRemove.push(domStyle);
+			}
+			if(newList) {
+				var newStyles = listToStyles(newList);
+				addStylesToDom(newStyles, options);
+			}
+			for(var i = 0; i < mayRemove.length; i++) {
+				var domStyle = mayRemove[i];
+				if(domStyle.refs === 0) {
+					for(var j = 0; j < domStyle.parts.length; j++)
+						domStyle.parts[j]();
+					delete stylesInDom[domStyle.id];
+				}
+			}
+		};
+	}
+
+	function addStylesToDom(styles, options) {
+		for(var i = 0; i < styles.length; i++) {
+			var item = styles[i];
+			var domStyle = stylesInDom[item.id];
+			if(domStyle) {
+				domStyle.refs++;
+				for(var j = 0; j < domStyle.parts.length; j++) {
+					domStyle.parts[j](item.parts[j]);
+				}
+				for(; j < item.parts.length; j++) {
+					domStyle.parts.push(addStyle(item.parts[j], options));
+				}
+			} else {
+				var parts = [];
+				for(var j = 0; j < item.parts.length; j++) {
+					parts.push(addStyle(item.parts[j], options));
+				}
+				stylesInDom[item.id] = {id: item.id, refs: 1, parts: parts};
+			}
+		}
+	}
+
+	function listToStyles(list) {
+		var styles = [];
+		var newStyles = {};
+		for(var i = 0; i < list.length; i++) {
+			var item = list[i];
+			var id = item[0];
+			var css = item[1];
+			var media = item[2];
+			var sourceMap = item[3];
+			var part = {css: css, media: media, sourceMap: sourceMap};
+			if(!newStyles[id])
+				styles.push(newStyles[id] = {id: id, parts: [part]});
+			else
+				newStyles[id].parts.push(part);
+		}
+		return styles;
+	}
+
+	function insertStyleElement(options, styleElement) {
+		var head = getHeadElement();
+		var lastStyleElementInsertedAtTop = styleElementsInsertedAtTop[styleElementsInsertedAtTop.length - 1];
+		if (options.insertAt === "top") {
+			if(!lastStyleElementInsertedAtTop) {
+				head.insertBefore(styleElement, head.firstChild);
+			} else if(lastStyleElementInsertedAtTop.nextSibling) {
+				head.insertBefore(styleElement, lastStyleElementInsertedAtTop.nextSibling);
+			} else {
+				head.appendChild(styleElement);
+			}
+			styleElementsInsertedAtTop.push(styleElement);
+		} else if (options.insertAt === "bottom") {
+			head.appendChild(styleElement);
+		} else {
+			throw new Error("Invalid value for parameter 'insertAt'. Must be 'top' or 'bottom'.");
+		}
+	}
+
+	function removeStyleElement(styleElement) {
+		styleElement.parentNode.removeChild(styleElement);
+		var idx = styleElementsInsertedAtTop.indexOf(styleElement);
+		if(idx >= 0) {
+			styleElementsInsertedAtTop.splice(idx, 1);
+		}
+	}
+
+	function createStyleElement(options) {
+		var styleElement = document.createElement("style");
+		styleElement.type = "text/css";
+		insertStyleElement(options, styleElement);
+		return styleElement;
+	}
+
+	function createLinkElement(options) {
+		var linkElement = document.createElement("link");
+		linkElement.rel = "stylesheet";
+		insertStyleElement(options, linkElement);
+		return linkElement;
+	}
+
+	function addStyle(obj, options) {
+		var styleElement, update, remove;
+
+		if (options.singleton) {
+			var styleIndex = singletonCounter++;
+			styleElement = singletonElement || (singletonElement = createStyleElement(options));
+			update = applyToSingletonTag.bind(null, styleElement, styleIndex, false);
+			remove = applyToSingletonTag.bind(null, styleElement, styleIndex, true);
+		} else if(obj.sourceMap &&
+			typeof URL === "function" &&
+			typeof URL.createObjectURL === "function" &&
+			typeof URL.revokeObjectURL === "function" &&
+			typeof Blob === "function" &&
+			typeof btoa === "function") {
+			styleElement = createLinkElement(options);
+			update = updateLink.bind(null, styleElement);
+			remove = function() {
+				removeStyleElement(styleElement);
+				if(styleElement.href)
+					URL.revokeObjectURL(styleElement.href);
+			};
+		} else {
+			styleElement = createStyleElement(options);
+			update = applyToTag.bind(null, styleElement);
+			remove = function() {
+				removeStyleElement(styleElement);
+			};
+		}
+
+		update(obj);
+
+		return function updateStyle(newObj) {
+			if(newObj) {
+				if(newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap)
+					return;
+				update(obj = newObj);
+			} else {
+				remove();
+			}
+		};
+	}
+
+	var replaceText = (function () {
+		var textStore = [];
+
+		return function (index, replacement) {
+			textStore[index] = replacement;
+			return textStore.filter(Boolean).join('\n');
+		};
+	})();
+
+	function applyToSingletonTag(styleElement, index, remove, obj) {
+		var css = remove ? "" : obj.css;
+
+		if (styleElement.styleSheet) {
+			styleElement.styleSheet.cssText = replaceText(index, css);
+		} else {
+			var cssNode = document.createTextNode(css);
+			var childNodes = styleElement.childNodes;
+			if (childNodes[index]) styleElement.removeChild(childNodes[index]);
+			if (childNodes.length) {
+				styleElement.insertBefore(cssNode, childNodes[index]);
+			} else {
+				styleElement.appendChild(cssNode);
+			}
+		}
+	}
+
+	function applyToTag(styleElement, obj) {
+		var css = obj.css;
+		var media = obj.media;
+
+		if(media) {
+			styleElement.setAttribute("media", media)
+		}
+
+		if(styleElement.styleSheet) {
+			styleElement.styleSheet.cssText = css;
+		} else {
+			while(styleElement.firstChild) {
+				styleElement.removeChild(styleElement.firstChild);
+			}
+			styleElement.appendChild(document.createTextNode(css));
+		}
+	}
+
+	function updateLink(linkElement, obj) {
+		var css = obj.css;
+		var sourceMap = obj.sourceMap;
+
+		if(sourceMap) {
+			// http://stackoverflow.com/a/26603875
+			css += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
+		}
+
+		var blob = new Blob([css], { type: "text/css" });
+
+		var oldSrc = linkElement.href;
+
+		linkElement.href = URL.createObjectURL(blob);
+
+		if(oldSrc)
+			URL.revokeObjectURL(oldSrc);
+	}
+
+
+/***/ },
+/* 10 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(1);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(9)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(true) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept(1, function() {
+				var newContent = __webpack_require__(1);
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 11 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Module of mixed-in functions shared between node and client code
+	 */
+	var isObject = __webpack_require__(3);
+
+	/**
+	 * Clear previous timeout.
+	 *
+	 * @return {Request} for chaining
+	 * @api public
+	 */
+
+	exports.clearTimeout = function _clearTimeout(){
+	  this._timeout = 0;
+	  clearTimeout(this._timer);
+	  return this;
+	};
+
+	/**
+	 * Override default response body parser
+	 *
+	 * This function will be called to convert incoming data into request.body
+	 *
+	 * @param {Function}
+	 * @api public
+	 */
+
+	exports.parse = function parse(fn){
+	  this._parser = fn;
+	  return this;
+	};
+
+	/**
+	 * Override default request body serializer
+	 *
+	 * This function will be called to convert data set via .send or .attach into payload to send
+	 *
+	 * @param {Function}
+	 * @api public
+	 */
+
+	exports.serialize = function serialize(fn){
+	  this._serializer = fn;
+	  return this;
+	};
+
+	/**
+	 * Set timeout to `ms`.
+	 *
+	 * @param {Number} ms
+	 * @return {Request} for chaining
+	 * @api public
+	 */
+
+	exports.timeout = function timeout(ms){
+	  this._timeout = ms;
+	  return this;
+	};
+
+	/**
+	 * Promise support
+	 *
+	 * @param {Function} resolve
+	 * @param {Function} reject
+	 * @return {Request}
+	 */
+
+	exports.then = function then(resolve, reject) {
+	  if (!this._fullfilledPromise) {
+	    var self = this;
+	    this._fullfilledPromise = new Promise(function(innerResolve, innerReject){
+	      self.end(function(err, res){
+	        if (err) innerReject(err); else innerResolve(res);
+	      });
+	    });
+	  }
+	  return this._fullfilledPromise.then(resolve, reject);
+	}
+
+	/**
+	 * Allow for extension
+	 */
+
+	exports.use = function use(fn) {
+	  fn(this);
+	  return this;
+	}
+
+
+	/**
+	 * Get request header `field`.
+	 * Case-insensitive.
+	 *
+	 * @param {String} field
+	 * @return {String}
+	 * @api public
+	 */
+
+	exports.get = function(field){
+	  return this._header[field.toLowerCase()];
+	};
+
+	/**
+	 * Get case-insensitive header `field` value.
+	 * This is a deprecated internal API. Use `.get(field)` instead.
+	 *
+	 * (getHeader is no longer used internally by the superagent code base)
+	 *
+	 * @param {String} field
+	 * @return {String}
+	 * @api private
+	 * @deprecated
+	 */
+
+	exports.getHeader = exports.get;
+
+	/**
+	 * Set header `field` to `val`, or multiple fields with one object.
+	 * Case-insensitive.
+	 *
+	 * Examples:
+	 *
+	 *      req.get('/')
+	 *        .set('Accept', 'application/json')
+	 *        .set('X-API-Key', 'foobar')
+	 *        .end(callback);
+	 *
+	 *      req.get('/')
+	 *        .set({ Accept: 'application/json', 'X-API-Key': 'foobar' })
+	 *        .end(callback);
+	 *
+	 * @param {String|Object} field
+	 * @param {String} val
+	 * @return {Request} for chaining
+	 * @api public
+	 */
+
+	exports.set = function(field, val){
+	  if (isObject(field)) {
+	    for (var key in field) {
+	      this.set(key, field[key]);
+	    }
+	    return this;
+	  }
+	  this._header[field.toLowerCase()] = val;
+	  this.header[field] = val;
+	  return this;
+	};
+
+	/**
+	 * Remove header `field`.
+	 * Case-insensitive.
+	 *
+	 * Example:
+	 *
+	 *      req.get('/')
+	 *        .unset('User-Agent')
+	 *        .end(callback);
+	 *
+	 * @param {String} field
+	 */
+	exports.unset = function(field){
+	  delete this._header[field.toLowerCase()];
+	  delete this.header[field];
+	  return this;
+	};
+
+	/**
+	 * Write the field `name` and `val` for "multipart/form-data"
+	 * request bodies.
+	 *
+	 * ``` js
+	 * request.post('/upload')
+	 *   .field('foo', 'bar')
+	 *   .end(callback);
+	 * ```
+	 *
+	 * @param {String} name
+	 * @param {String|Blob|File|Buffer|fs.ReadStream} val
+	 * @return {Request} for chaining
+	 * @api public
+	 */
+	exports.field = function(name, val) {
+	  this._getFormData().append(name, val);
+	  return this;
+	};
+
+	/**
+	 * Abort the request, and clear potential timeout.
+	 *
+	 * @return {Request}
+	 * @api public
+	 */
+	exports.abort = function(){
+	  if (this._aborted) {
+	    return this;
+	  }
+	  this._aborted = true;
+	  this.xhr && this.xhr.abort(); // browser
+	  this.req && this.req.abort(); // node
+	  this.clearTimeout();
+	  this.emit('abort');
+	  return this;
+	};
+
+	/**
+	 * Enable transmission of cookies with x-domain requests.
+	 *
+	 * Note that for this to work the origin must not be
+	 * using "Access-Control-Allow-Origin" with a wildcard,
+	 * and also must set "Access-Control-Allow-Credentials"
+	 * to "true".
+	 *
+	 * @api public
+	 */
+
+	exports.withCredentials = function(){
+	  // This is browser-only functionality. Node side is no-op.
+	  this._withCredentials = true;
+	  return this;
+	};
+
+	/**
+	 * Set the max redirects to `n`. Does noting in browser XHR implementation.
+	 *
+	 * @param {Number} n
+	 * @return {Request} for chaining
+	 * @api public
+	 */
+
+	exports.redirects = function(n){
+	  this._maxRedirects = n;
+	  return this;
+	};
+
+	/**
+	 * Convert to a plain javascript object (not JSON string) of scalar properties.
+	 * Note as this method is designed to return a useful non-this value,
+	 * it cannot be chained.
+	 *
+	 * @return {Object} describing method, url, and data of this request
+	 * @api public
+	 */
+
+	exports.toJSON = function(){
+	  return {
+	    method: this.method,
+	    url: this.url,
+	    data: this._data,
+	    headers: this._header
+	  };
+	};
+
+	/**
+	 * Check if `obj` is a host object,
+	 * we don't want to serialize these :)
+	 *
+	 * TODO: future proof, move to compoent land
+	 *
+	 * @param {Object} obj
+	 * @return {Boolean}
+	 * @api private
+	 */
+
+	exports._isHost = function _isHost(obj) {
+	  var str = {}.toString.call(obj);
+
+	  switch (str) {
+	    case '[object File]':
+	    case '[object Blob]':
+	    case '[object FormData]':
+	      return true;
+	    default:
+	      return false;
+	  }
+	}
+
+	/**
+	 * Send `data` as the request body, defaulting the `.type()` to "json" when
+	 * an object is given.
+	 *
+	 * Examples:
+	 *
+	 *       // manual json
+	 *       request.post('/user')
+	 *         .type('json')
+	 *         .send('{"name":"tj"}')
+	 *         .end(callback)
+	 *
+	 *       // auto json
+	 *       request.post('/user')
+	 *         .send({ name: 'tj' })
+	 *         .end(callback)
+	 *
+	 *       // manual x-www-form-urlencoded
+	 *       request.post('/user')
+	 *         .type('form')
+	 *         .send('name=tj')
+	 *         .end(callback)
+	 *
+	 *       // auto x-www-form-urlencoded
+	 *       request.post('/user')
+	 *         .type('form')
+	 *         .send({ name: 'tj' })
+	 *         .end(callback)
+	 *
+	 *       // defaults to x-www-form-urlencoded
+	 *      request.post('/user')
+	 *        .send('name=tobi')
+	 *        .send('species=ferret')
+	 *        .end(callback)
+	 *
+	 * @param {String|Object} data
+	 * @return {Request} for chaining
+	 * @api public
+	 */
+
+	exports.send = function(data){
+	  var obj = isObject(data);
+	  var type = this._header['content-type'];
+
+	  // merge
+	  if (obj && isObject(this._data)) {
+	    for (var key in data) {
+	      this._data[key] = data[key];
+	    }
+	  } else if ('string' == typeof data) {
+	    // default to x-www-form-urlencoded
+	    if (!type) this.type('form');
+	    type = this._header['content-type'];
+	    if ('application/x-www-form-urlencoded' == type) {
+	      this._data = this._data
+	        ? this._data + '&' + data
+	        : data;
+	    } else {
+	      this._data = (this._data || '') + data;
+	    }
+	  } else {
+	    this._data = data;
+	  }
+
+	  if (!obj || this._isHost(data)) return this;
+
+	  // default to json
+	  if (!type) this.type('json');
+	  return this;
+	};
+
+
+/***/ },
+/* 12 */
+/***/ function(module, exports) {
+
+	// The node and browser modules expose versions of this with the
+	// appropriate constructor function bound as first argument
+	/**
+	 * Issue a request:
+	 *
+	 * Examples:
+	 *
+	 *    request('GET', '/users').end(callback)
+	 *    request('/users').end(callback)
+	 *    request('/users', callback)
+	 *
+	 * @param {String} method
+	 * @param {String|Function} url or callback
+	 * @return {Request}
+	 * @api public
+	 */
+
+	function request(RequestConstructor, method, url) {
+	  // callback
+	  if ('function' == typeof url) {
+	    return new RequestConstructor('GET', method).end(url);
+	  }
+
+	  // url first
+	  if (2 == arguments.length) {
+	    return new RequestConstructor('GET', method);
+	  }
+
+	  return new RequestConstructor(method, url);
+	}
+
+	module.exports = request;
+
+
+/***/ },
+/* 13 */
+/***/ function(module, exports, __webpack_require__) {
+
+	
+	/**
+	 * Expose `Emitter`.
+	 */
+
+	if (true) {
+	  module.exports = Emitter;
+	}
+
+	/**
+	 * Initialize a new `Emitter`.
+	 *
+	 * @api public
+	 */
+
+	function Emitter(obj) {
+	  if (obj) return mixin(obj);
+	};
+
+	/**
+	 * Mixin the emitter properties.
+	 *
+	 * @param {Object} obj
+	 * @return {Object}
+	 * @api private
+	 */
+
+	function mixin(obj) {
+	  for (var key in Emitter.prototype) {
+	    obj[key] = Emitter.prototype[key];
+	  }
+	  return obj;
+	}
+
+	/**
+	 * Listen on the given `event` with `fn`.
+	 *
+	 * @param {String} event
+	 * @param {Function} fn
+	 * @return {Emitter}
+	 * @api public
+	 */
+
+	Emitter.prototype.on =
+	Emitter.prototype.addEventListener = function(event, fn){
+	  this._callbacks = this._callbacks || {};
+	  (this._callbacks['$' + event] = this._callbacks['$' + event] || [])
+	    .push(fn);
+	  return this;
+	};
+
+	/**
+	 * Adds an `event` listener that will be invoked a single
+	 * time then automatically removed.
+	 *
+	 * @param {String} event
+	 * @param {Function} fn
+	 * @return {Emitter}
+	 * @api public
+	 */
+
+	Emitter.prototype.once = function(event, fn){
+	  function on() {
+	    this.off(event, on);
+	    fn.apply(this, arguments);
+	  }
+
+	  on.fn = fn;
+	  this.on(event, on);
+	  return this;
+	};
+
+	/**
+	 * Remove the given callback for `event` or all
+	 * registered callbacks.
+	 *
+	 * @param {String} event
+	 * @param {Function} fn
+	 * @return {Emitter}
+	 * @api public
+	 */
+
+	Emitter.prototype.off =
+	Emitter.prototype.removeListener =
+	Emitter.prototype.removeAllListeners =
+	Emitter.prototype.removeEventListener = function(event, fn){
+	  this._callbacks = this._callbacks || {};
+
+	  // all
+	  if (0 == arguments.length) {
+	    this._callbacks = {};
+	    return this;
+	  }
+
+	  // specific event
+	  var callbacks = this._callbacks['$' + event];
+	  if (!callbacks) return this;
+
+	  // remove all handlers
+	  if (1 == arguments.length) {
+	    delete this._callbacks['$' + event];
+	    return this;
+	  }
+
+	  // remove specific handler
+	  var cb;
+	  for (var i = 0; i < callbacks.length; i++) {
+	    cb = callbacks[i];
+	    if (cb === fn || cb.fn === fn) {
+	      callbacks.splice(i, 1);
+	      break;
+	    }
+	  }
+	  return this;
+	};
+
+	/**
+	 * Emit `event` with the given args.
+	 *
+	 * @param {String} event
+	 * @param {Mixed} ...
+	 * @return {Emitter}
+	 */
+
+	Emitter.prototype.emit = function(event){
+	  this._callbacks = this._callbacks || {};
+	  var args = [].slice.call(arguments, 1)
+	    , callbacks = this._callbacks['$' + event];
+
+	  if (callbacks) {
+	    callbacks = callbacks.slice(0);
+	    for (var i = 0, len = callbacks.length; i < len; ++i) {
+	      callbacks[i].apply(this, args);
+	    }
+	  }
+
+	  return this;
+	};
+
+	/**
+	 * Return array of callbacks for `event`.
+	 *
+	 * @param {String} event
+	 * @return {Array}
+	 * @api public
+	 */
+
+	Emitter.prototype.listeners = function(event){
+	  this._callbacks = this._callbacks || {};
+	  return this._callbacks['$' + event] || [];
+	};
+
+	/**
+	 * Check if this emitter has `event` handlers.
+	 *
+	 * @param {String} event
+	 * @return {Boolean}
+	 * @api public
+	 */
+
+	Emitter.prototype.hasListeners = function(event){
+	  return !! this.listeners(event).length;
+	};
+
+
+/***/ },
+/* 14 */
+/***/ function(module, exports) {
+
+	module.exports = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAD6APoAAD/4QD6RXhpZgAATU0AKgAAAAgABwESAAMAAAABAAEAAAEaAAUAAAABAAAAYgEbAAUAAAABAAAAagEoAAMAAAABAAIAAAExAAIAAAAiAAAAcgEyAAIAAAAUAAAAlIdpAAQAAAABAAAAqAAAAAAAAAPoAAAAAQAAA+gAAAABQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpADIwMTY6MDc6MjAgMTU6NDU6MjMAAASQBAACAAAAFAAAAN6gAQADAAAAAQABAACgAgAEAAAAAQAAACigAwAEAAAAAQAAACgAAAAAMjAxNjowNzoxNiAyMzowNjowOQD/4RLKaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJYTVAgQ29yZSA1LjQuMCI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1wOk1vZGlmeURhdGU9IjIwMTYtMDctMjBUMTU6NDU6MjMrMDg6MDAiIHhtcDpDcmVhdGVEYXRlPSIyMDE2LTA3LTE2VDIzOjA2OjA5KzA4OjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDE2LTA3LTIwVDE1OjQ1OjIzKzA4OjAwIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE1IChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpmMzI2MTllNC02NjMwLTkxNGQtYTMwYy1lNTMwY2NhMmUyNmIiIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDplYTc4NzNiNy00ZTRkLTExZTYtODlmZC1kYzQ1OTU1Y2Y1M2YiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDozZGYwZWVlMC05YzE3LTkyNDEtYmU0Yy1lYjAyY2YxNmY2ZWMiIGRjOmZvcm1hdD0iaW1hZ2UvanBlZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjE5NTU3OGU2LWU5NDctZGM0MC05NTg0LTQ2NmNhOTFmNmJkZCIgc3RSZWY6b3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjNkZjBlZWUwLTljMTctOTI0MS1iZTRjLWViMDJjZjE2ZjZlYyIgc3RSZWY6ZG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOmZlM2Y1YmI0LTRlM2QtMTFlNi1iNThkLWYxYzE4NmUzMGNmNCIvPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiBzdEV2dDp3aGVuPSIyMDE2LTA3LTE2VDIzOjA2OjA5KzA4OjAwIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjNkZjBlZWUwLTljMTctOTI0MS1iZTRjLWViMDJjZjE2ZjZlYyIgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjb252ZXJ0ZWQiIHN0RXZ0OnBhcmFtZXRlcnM9ImZyb20gaW1hZ2UvcG5nIHRvIGFwcGxpY2F0aW9uL3ZuZC5hZG9iZS5waG90b3Nob3AiLz4gPHJkZjpsaSBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxNSAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iIHN0RXZ0OndoZW49IjIwMTYtMDctMjBUMTM6NTE6NTcrMDg6MDAiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6YjhkMWY5MzMtNDAwMC04YTQzLTg5ZjctNjM5YTBlMjc3OWIzIiBzdEV2dDphY3Rpb249InNhdmVkIi8+IDxyZGY6bGkgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiBzdEV2dDpjaGFuZ2VkPSIvIiBzdEV2dDp3aGVuPSIyMDE2LTA3LTIwVDE1OjQ1OjIzKzA4OjAwIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjE5NTU3OGU2LWU5NDctZGM0MC05NTg0LTQ2NmNhOTFmNmJkZCIgc3RFdnQ6YWN0aW9uPSJzYXZlZCIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY29udmVydGVkIiBzdEV2dDpwYXJhbWV0ZXJzPSJmcm9tIGFwcGxpY2F0aW9uL3ZuZC5hZG9iZS5waG90b3Nob3AgdG8gaW1hZ2UvanBlZyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iZGVyaXZlZCIgc3RFdnQ6cGFyYW1ldGVycz0iY29udmVydGVkIGZyb20gYXBwbGljYXRpb24vdm5kLmFkb2JlLnBob3Rvc2hvcCB0byBpbWFnZS9qcGVnIi8+IDxyZGY6bGkgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiBzdEV2dDpjaGFuZ2VkPSIvIiBzdEV2dDp3aGVuPSIyMDE2LTA3LTIwVDE1OjQ1OjIzKzA4OjAwIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOmYzMjYxOWU0LTY2MzAtOTE0ZC1hMzBjLWU1MzBjY2EyZTI2YiIgc3RFdnQ6YWN0aW9uPSJzYXZlZCIvPiA8L3JkZjpTZXE+IDwveG1wTU06SGlzdG9yeT4gPHBob3Rvc2hvcDpUZXh0TGF5ZXJzPiA8cmRmOkJhZz4gPHJkZjpsaSBwaG90b3Nob3A6TGF5ZXJOYW1lPSJNdVhJIiBwaG90b3Nob3A6TGF5ZXJUZXh0PSJNdVhJIi8+IDwvcmRmOkJhZz4gPC9waG90b3Nob3A6VGV4dExheWVycz4gPHBob3Rvc2hvcDpEb2N1bWVudEFuY2VzdG9ycz4gPHJkZjpCYWc+IDxyZGY6bGk+eG1wLmRpZDpjNmVhYzdmMy03N2NjLTNkNDgtYWI2OC02NjY4MWI3NjkwNmY8L3JkZjpsaT4gPC9yZGY6QmFnPiA8L3Bob3Rvc2hvcDpEb2N1bWVudEFuY2VzdG9ycz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPD94cGFja2V0IGVuZD0idyI/PgD/7QBkUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAACwcAVoAAxslRxwCAAACAAIcAj4ACDIwMTYwNzE2HAI/AAsyMzA2MDkrMDgwMDhCSU0EJQAAAAAAEAbTudEfNTS3btLB/WemSDn/wAARCAAoACgDAREAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ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"
+
+/***/ },
+/* 15 */
+/***/ function(module, exports) {
+
+	module.exports = "data:image/png;base64,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"
+
+/***/ },
+/* 16 */
+/***/ function(module, exports) {
+
+	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpEMTg3QkVCMDQ0RjYxMUU2QjUyNUY0N0U0NkI4MzQ4OCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpEMTg3QkVCMTQ0RjYxMUU2QjUyNUY0N0U0NkI4MzQ4OCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkI1OEJFRUZGNDRGMjExRTZCNTI1RjQ3RTQ2QjgzNDg4IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkI1OEJFRjAwNDRGMjExRTZCNTI1RjQ3RTQ2QjgzNDg4Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+wwnR/QAAAORQTFRFnN/AVcmHfdWsVMiEUciAXcuPruXKZc2XlNy6UsiCfdWrTcd6subMY8yVa9CeqOPH0PDdac6aZ82ZcNGhT8d8ouHDUciBidm0V8mIze/cyu7Zas+cnd/Aq+TJu+nTs+bPetSpctGix+3YvurPdNKkkNu5VcmGze/bdtOmYMuSj9u5T8d+9/z+qOPCW8qNbdCfn+DCl9289Pv+XMqPxOzWt+jRr+XLpeLFdtOlaM6ahNexzu/boODBjNm1vOnSxu3YuejQt+fOh9iyhNeww+vWYcyU7/n9WcmKoeDEx+3XTcd5////B1oMJgAAAEx0Uk5T////////////////////////////////////////////////////////////////////////////////////////////////////AJ6N5MwAAAESSURBVHjadNHXloIwEAbgICCiYtddy/bee+9Vd/73f5/NMSGZmMNcwJz5ApNMBAriekIEiALtp1TMLxlRIYuEqIhbcaiRMo/rXbJRXeDbL+LRcPhpw0GqCc7tyFU6QM6botcz5eRevYOc+0fsowBjlYwVf8b8lykauvV8BGeZ03AAkBmKZHc70QhTh++WmZ6/ta7yPITqXQ/yygSomqWvyHdeUQWZj8xSejcM0VX6N7CNPiwDzWZZPsvsPvY4q/uqWX6Gx/wQFZ8DxjsOH4Y3wIrVn2+H94nWttjW1uFwSZZOT4AlzQ8+UwnGL3zeXZ2PsC3TGB6nQ5139H0w3qZoaA6YRJ0FfqSZPf/x76XO/gUYADIT7gSgDNcgAAAAAElFTkSuQmCC"
 
 /***/ },
 /* 17 */
+/***/ function(module, exports) {
+
+	module.exports = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAASABIAAD/4QESRXhpZgAATU0AKgAAAAgACAEGAAMAAAABAAIAAAESAAMAAAABAAEAAAEaAAUAAAABAAAAbgEbAAUAAAABAAAAdgEoAAMAAAABAAIAAAExAAIAAAAiAAAAfgEyAAIAAAAUAAAAoIdpAAQAAAABAAAAtAAAAAAAAABIAAAAAQAAAEgAAAABQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpADIwMTY6MDc6MjAgMTU6MzU6MzYAAAWQAAAHAAAABDAyMjGQBAACAAAAFAAAAPagAQADAAAAAQABAACgAgAEAAAAAQAAACigAwAEAAAAAQAAACgAAAAAMjAxNjowNzoyMCAxNDowMjowOAD/4RanaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJYTVAgQ29yZSA1LjQuMCI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1wOk1vZGlmeURhdGU9IjIwMTYtMDctMjBUMTU6MzU6MzYrMDg6MDAiIHhtcDpDcmVhdGVEYXRlPSIyMDE2LTA3LTIwVDE0OjAyOjA4KzA4OjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDE2LTA3LTIwVDE1OjM1OjM2KzA4OjAwIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE1IChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NjgzN2FjZS1kMmU5LWE2NGQtOTA1Yi1mMjA0NWIwNWNmZjYiIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDo4MzQ3MWQ0OS00ZTRjLTExZTYtODlmZC1kYzQ1OTU1Y2Y1M2YiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo2MzI4YjNkMC04Njc1LWM5NDAtOGY4Zi0yMGYxOTBhNDEzZWUiIGRjOmZvcm1hdD0iaW1hZ2UvanBlZyIgcGhvdG9zaG9wOkxlZ2FjeUlQVENEaWdlc3Q9IkNEQ0ZGQTdEQThDN0JFMDkwNTcwNzZBRUFGMDVDMzRFIiBwaG90b3Nob3A6SUNDUHJvZmlsZT0ic1JHQiBJRUM2MTk2Ni0yLjEiIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2Y2E1Y2ZiMC1iZjkyLWYxNDAtOTFmNi02ZTQwZDUwZTEyNzgiIHN0UmVmOm9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo2MzI4YjNkMC04Njc1LWM5NDAtOGY4Zi0yMGYxOTBhNDEzZWUiIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MGFiNjU2ZmMtNDk1NS1mMDQzLTk1NTEtNWIzNzFkYzk3YzU4Ii8+IDx4bXBNTTpIaXN0b3J5PiA8cmRmOlNlcT4gPHJkZjpsaSBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxNSAoV2luZG93cykiIHN0RXZ0OndoZW49IjIwMTYtMDctMjBUMTQ6MDI6MDgrMDg6MDAiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6NjMyOGIzZDAtODY3NS1jOTQwLThmOGYtMjBmMTkwYTQxM2VlIiBzdEV2dDphY3Rpb249ImNyZWF0ZWQiLz4gPHJkZjpsaSBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxNSAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iIHN0RXZ0OndoZW49IjIwMTYtMDctMjBUMTU6MTE6MjIrMDg6MDAiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6ZWE0OTk5NGMtYTM3NC04ZjQzLWJiYWMtYzc2NDRjMjE4ZThmIiBzdEV2dDphY3Rpb249InNhdmVkIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjb252ZXJ0ZWQiIHN0RXZ0OnBhcmFtZXRlcnM9ImZyb20gYXBwbGljYXRpb24vdm5kLmFkb2JlLnBob3Rvc2hvcCB0byBpbWFnZS9qcGVnIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJkZXJpdmVkIiBzdEV2dDpwYXJhbWV0ZXJzPSJjb252ZXJ0ZWQgZnJvbSBhcHBsaWNhdGlvbi92bmQuYWRvYmUucGhvdG9zaG9wIHRvIGltYWdlL2pwZWciLz4gPHJkZjpsaSBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxNSAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iIHN0RXZ0OndoZW49IjIwMTYtMDctMjBUMTU6MTE6MjIrMDg6MDAiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6MzFhYTYwNzMtYWQ2NC1kOTRkLTg2YTQtNTVjMzI3ZTczYWI2IiBzdEV2dDphY3Rpb249InNhdmVkIi8+IDxyZGY6bGkgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiBzdEV2dDpjaGFuZ2VkPSIvIiBzdEV2dDp3aGVuPSIyMDE2LTA3LTIwVDE1OjEzOjAxKzA4OjAwIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjM3NTZkYmJlLTc3ZjUtM2Y0Zi05MWIwLWEzOTE1MzUwM2M1YiIgc3RFdnQ6YWN0aW9uPSJzYXZlZCIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY29udmVydGVkIiBzdEV2dDpwYXJhbWV0ZXJzPSJmcm9tIGltYWdlL2pwZWcgdG8gYXBwbGljYXRpb24vdm5kLmFkb2JlLnBob3Rvc2hvcCIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iZGVyaXZlZCIgc3RFdnQ6cGFyYW1ldGVycz0iY29udmVydGVkIGZyb20gaW1hZ2UvanBlZyB0byBhcHBsaWNhdGlvbi92bmQuYWRvYmUucGhvdG9zaG9wIi8+IDxyZGY6bGkgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiBzdEV2dDpjaGFuZ2VkPSIvIiBzdEV2dDp3aGVuPSIyMDE2LTA3LTIwVDE1OjEzOjAxKzA4OjAwIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjZjYTVjZmIwLWJmOTItZjE0MC05MWY2LTZlNDBkNTBlMTI3OCIgc3RFdnQ6YWN0aW9uPSJzYXZlZCIvPiA8cmRmOmxpIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE1IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIgc3RFdnQ6d2hlbj0iMjAxNi0wNy0yMFQxNTozNTozNiswODowMCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDowYWI2NTZmYy00OTU1LWYwNDMtOTU1MS01YjM3MWRjOTdjNTgiIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiLz4gPHJkZjpsaSBzdEV2dDphY3Rpb249ImNvbnZlcnRlZCIgc3RFdnQ6cGFyYW1ldGVycz0iZnJvbSBhcHBsaWNhdGlvbi92bmQuYWRvYmUucGhvdG9zaG9wIHRvIGltYWdlL2pwZWciLz4gPHJkZjpsaSBzdEV2dDphY3Rpb249ImRlcml2ZWQiIHN0RXZ0OnBhcmFtZXRlcnM9ImNvbnZlcnRlZCBmcm9tIGFwcGxpY2F0aW9uL3ZuZC5hZG9iZS5waG90b3Nob3AgdG8gaW1hZ2UvanBlZyIvPiA8cmRmOmxpIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE1IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIgc3RFdnQ6d2hlbj0iMjAxNi0wNy0yMFQxNTozNTozNiswODowMCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDo2NjgzN2FjZS1kMmU5LWE2NGQtOTA1Yi1mMjA0NWIwNWNmZjYiIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDxwaG90b3Nob3A6RG9jdW1lbnRBbmNlc3RvcnM+IDxyZGY6QmFnPiA8cmRmOmxpPmFkb2JlOmRvY2lkOnBob3Rvc2hvcDpmZTNmNWJiNC00ZTNkLTExZTYtYjU4ZC1mMWMxODZlMzBjZjQ8L3JkZjpsaT4gPHJkZjpsaT54bXAuZGlkOmM2ZWFjN2YzLTc3Y2MtM2Q0OC1hYjY4LTY2NjgxYjc2OTA2ZjwvcmRmOmxpPiA8L3JkZjpCYWc+IDwvcGhvdG9zaG9wOkRvY3VtZW50QW5jZXN0b3JzPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8P3hwYWNrZXQgZW5kPSJ3Ij8+AP/tAGRQaG90b3Nob3AgMy4wADhCSU0EBAAAAAAALBwBWgADGyVHHAIAAAIAAhwCPgAIMjAxNjA3MjAcAj8ACzE0MDIwOCswODAwOEJJTQQlAAAAAAAQzyN4xNVYZOyPxrLXz+8mmP/AABEIACgAKAMBEQACEQEDEQH/xAAfAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgv/xAC1EAACAQMDAgQDBQUEBAAAAX0BAgMABBEFEiExQQYTUWEHInEUMoGRoQgjQrHB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"
+
+/***/ },
+/* 18 */
+/***/ function(module, exports) {
+
+	var Vue // late bind
+	var map = Object.create(null)
+	var shimmed = false
+	var isBrowserify = false
+
+	/**
+	 * Determine compatibility and apply patch.
+	 *
+	 * @param {Function} vue
+	 * @param {Boolean} browserify
+	 */
+
+	exports.install = function (vue, browserify) {
+	  if (shimmed) return
+	  shimmed = true
+
+	  Vue = vue
+	  isBrowserify = browserify
+
+	  exports.compatible = !!Vue.internalDirectives
+	  if (!exports.compatible) {
+	    console.warn(
+	      '[HMR] vue-loader hot reload is only compatible with ' +
+	      'Vue.js 1.0.0+.'
+	    )
+	    return
+	  }
+
+	  // patch view directive
+	  patchView(Vue.internalDirectives.component)
+	  console.log('[HMR] Vue component hot reload shim applied.')
+	  // shim router-view if present
+	  var routerView = Vue.elementDirective('router-view')
+	  if (routerView) {
+	    patchView(routerView)
+	    console.log('[HMR] vue-router <router-view> hot reload shim applied.')
+	  }
+	}
+
+	/**
+	 * Shim the view directive (component or router-view).
+	 *
+	 * @param {Object} View
+	 */
+
+	function patchView (View) {
+	  var unbuild = View.unbuild
+	  View.unbuild = function (defer) {
+	    if (!this.hotUpdating) {
+	      var prevComponent = this.childVM && this.childVM.constructor
+	      removeView(prevComponent, this)
+	      // defer = true means we are transitioning to a new
+	      // Component. Register this new component to the list.
+	      if (defer) {
+	        addView(this.Component, this)
+	      }
+	    }
+	    // call original
+	    return unbuild.call(this, defer)
+	  }
+	}
+
+	/**
+	 * Add a component view to a Component's hot list
+	 *
+	 * @param {Function} Component
+	 * @param {Directive} view - view directive instance
+	 */
+
+	function addView (Component, view) {
+	  var id = Component && Component.options.hotID
+	  if (id) {
+	    if (!map[id]) {
+	      map[id] = {
+	        Component: Component,
+	        views: [],
+	        instances: []
+	      }
+	    }
+	    map[id].views.push(view)
+	  }
+	}
+
+	/**
+	 * Remove a component view from a Component's hot list
+	 *
+	 * @param {Function} Component
+	 * @param {Directive} view - view directive instance
+	 */
+
+	function removeView (Component, view) {
+	  var id = Component && Component.options.hotID
+	  if (id) {
+	    map[id].views.$remove(view)
+	  }
+	}
+
+	/**
+	 * Create a record for a hot module, which keeps track of its construcotr,
+	 * instnaces and views (component directives or router-views).
+	 *
+	 * @param {String} id
+	 * @param {Object} options
+	 */
+
+	exports.createRecord = function (id, options) {
+	  if (typeof options === 'function') {
+	    options = options.options
+	  }
+	  if (typeof options.el !== 'string' && typeof options.data !== 'object') {
+	    makeOptionsHot(id, options)
+	    map[id] = {
+	      Component: null,
+	      views: [],
+	      instances: []
+	    }
+	  }
+	}
+
+	/**
+	 * Make a Component options object hot.
+	 *
+	 * @param {String} id
+	 * @param {Object} options
+	 */
+
+	function makeOptionsHot (id, options) {
+	  options.hotID = id
+	  injectHook(options, 'created', function () {
+	    var record = map[id]
+	    if (!record.Component) {
+	      record.Component = this.constructor
+	    }
+	    record.instances.push(this)
+	  })
+	  injectHook(options, 'beforeDestroy', function () {
+	    map[id].instances.$remove(this)
+	  })
+	}
+
+	/**
+	 * Inject a hook to a hot reloadable component so that
+	 * we can keep track of it.
+	 *
+	 * @param {Object} options
+	 * @param {String} name
+	 * @param {Function} hook
+	 */
+
+	function injectHook (options, name, hook) {
+	  var existing = options[name]
+	  options[name] = existing
+	    ? Array.isArray(existing)
+	      ? existing.concat(hook)
+	      : [existing, hook]
+	    : [hook]
+	}
+
+	/**
+	 * Update a hot component.
+	 *
+	 * @param {String} id
+	 * @param {Object|null} newOptions
+	 * @param {String|null} newTemplate
+	 */
+
+	exports.update = function (id, newOptions, newTemplate) {
+	  var record = map[id]
+	  // force full-reload if an instance of the component is active but is not
+	  // managed by a view
+	  if (!record || (record.instances.length && !record.views.length)) {
+	    console.log('[HMR] Root or manually-mounted instance modified. Full reload may be required.')
+	    if (!isBrowserify) {
+	      window.location.reload()
+	    } else {
+	      // browserify-hmr somehow sends incomplete bundle if we reload here
+	      return
+	    }
+	  }
+	  if (!isBrowserify) {
+	    // browserify-hmr already logs this
+	    console.log('[HMR] Updating component: ' + format(id))
+	  }
+	  var Component = record.Component
+	  // update constructor
+	  if (newOptions) {
+	    // in case the user exports a constructor
+	    Component = record.Component = typeof newOptions === 'function'
+	      ? newOptions
+	      : Vue.extend(newOptions)
+	    makeOptionsHot(id, Component.options)
+	  }
+	  if (newTemplate) {
+	    Component.options.template = newTemplate
+	  }
+	  // handle recursive lookup
+	  if (Component.options.name) {
+	    Component.options.components[Component.options.name] = Component
+	  }
+	  // reset constructor cached linker
+	  Component.linker = null
+	  // reload all views
+	  record.views.forEach(function (view) {
+	    updateView(view, Component)
+	  })
+	  // flush devtools
+	  if (window.__VUE_DEVTOOLS_GLOBAL_HOOK__) {
+	    window.__VUE_DEVTOOLS_GLOBAL_HOOK__.emit('flush')
+	  }
+	}
+
+	/**
+	 * Update a component view instance
+	 *
+	 * @param {Directive} view
+	 * @param {Function} Component
+	 */
+
+	function updateView (view, Component) {
+	  if (!view._bound) {
+	    return
+	  }
+	  view.Component = Component
+	  view.hotUpdating = true
+	  // disable transitions
+	  view.vm._isCompiled = false
+	  // save state
+	  var state = extractState(view.childVM)
+	  // remount, make sure to disable keep-alive
+	  var keepAlive = view.keepAlive
+	  view.keepAlive = false
+	  view.mountComponent()
+	  view.keepAlive = keepAlive
+	  // restore state
+	  restoreState(view.childVM, state, true)
+	  // re-eanble transitions
+	  view.vm._isCompiled = true
+	  view.hotUpdating = false
+	}
+
+	/**
+	 * Extract state from a Vue instance.
+	 *
+	 * @param {Vue} vm
+	 * @return {Object}
+	 */
+
+	function extractState (vm) {
+	  return {
+	    cid: vm.constructor.cid,
+	    data: vm.$data,
+	    children: vm.$children.map(extractState)
+	  }
+	}
+
+	/**
+	 * Restore state to a reloaded Vue instance.
+	 *
+	 * @param {Vue} vm
+	 * @param {Object} state
+	 */
+
+	function restoreState (vm, state, isRoot) {
+	  var oldAsyncConfig
+	  if (isRoot) {
+	    // set Vue into sync mode during state rehydration
+	    oldAsyncConfig = Vue.config.async
+	    Vue.config.async = false
+	  }
+	  // actual restore
+	  if (isRoot || !vm._props) {
+	    vm.$data = state.data
+	  } else {
+	    Object.keys(state.data).forEach(function (key) {
+	      if (!vm._props[key]) {
+	        // for non-root, only restore non-props fields
+	        vm.$data[key] = state.data[key]
+	      }
+	    })
+	  }
+	  // verify child consistency
+	  var hasSameChildren = vm.$children.every(function (c, i) {
+	    return state.children[i] && state.children[i].cid === c.constructor.cid
+	  })
+	  if (hasSameChildren) {
+	    // rehydrate children
+	    vm.$children.forEach(function (c, i) {
+	      restoreState(c, state.children[i])
+	    })
+	  }
+	  if (isRoot) {
+	    Vue.config.async = oldAsyncConfig
+	  }
+	}
+
+	function format (id) {
+	  var match = id.match(/[^\/]+\.vue$/)
+	  return match ? match[0] : id
+	}
+
+
+/***/ },
+/* 19 */
+/***/ function(module, exports) {
+
+	module.exports = "\n<div class=\"top\"></div>\n<div class=\"content\" v-el:content>\n\t<div class=\"chatbot\">\n\t\t<div class=\"img\"></div>\n\t\t<div class=\"bubble\">\n\t\t\t<div class=\"angle\"></div>\n\t\t\t<div class=\"box\"><p>你好，我是木小犀，我可以为你解答很多问题，也可以陪你聊天哟~<br/>\n\t\t\t\t\t\t如果你想问路，例如你要去图书馆，请问'华中师范大学图书馆在哪儿'；<br/>\n\t\t\t\t\t\t如果你想得到网址，例如你想知道信息门户的网址，请问'信息门户的网址'；<br/>\n\t\t\t\t\t\t如果你想得到照片，例如你想要图书馆的照片，请问'图书馆的照片'；<br/>\n\t\t\t\t\t\t如果你想得到资料或者通知等等，例如你想要华中师范大学的资料，请问'华中师范大学的资料'；<br/>\n\t\t\t\t\t\t如果你想和我聊天，就直接来吧。</p></div>\n\t\t</div>\n\t</div>\n\t<div v-for=\"myque in myques\">\n\t\t<div class=\"user\">\n\t\t\t<div class=\"img\"></div>\n\t\t\t<div class=\"bubble\">\n\t\t\t\t<div class=\"angle\"></div>\n\t\t\t\t<div class=\"box\"><p>${ myque.text }</p></div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"chatbot\">\n\t\t\t<div class=\"img\"></div>\n\t\t\t<div class=\"bubble\">\n\t\t\t\t<div class=\"angle\"></div>\n\t\t\t\t<template v-if=\" myque.tag == 'pic' \">\n\t\t\t\t\t<div class=\"box box-img\"><img :src=\"myque.bot\" v-on:click=\"largepic(myque)\"></div>\n\t\t\t\t</template>\n\t\t\t\t<template v-if=\" myque.tag == 'txt' \">\n\t\t\t\t\t<div class=\"box\"><p>${ myque.bot }</p></div>\n\t\t\t\t</template>\n\t\t\t\t<template v-if=\" myque.tag == 'web' \"></div>\n\t\t\t\t\t<div class=\"box\"><a href=\"${ myque.bot }\">${ myque.bot }</a></div>\n\t\t\t\t</template>\n\t\t\t\t<template v-if=\" myque.tag == 'map' \">\n\t\t\t\t\t<div id=\"box-${ myque.index }\"></div>\n\t\t\t\t</template>\n\t\t\t\t<template v-if=\"myque.largepic\">\n\t\t\t\t\t<div class=\"largepic\">\n\t\t\t\t\t\t<div class=\"pic_box\">\n\t\t\t\t\t\t\t<div class=\"close\" v-on:click=\"close(myque)\">X</div>\n\t\t\t\t\t\t\t<div class=\"pic_content\"><img :src=\"myque.bot\"></div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</template>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n<div class=\"input\">\n\t<input type=\"text\" name=\"text\" placeholder=\"你想知道什么？\" v-model=\"ques\">\n\t<button @click=\"ask\"></button>\n</div>\n";
+
+/***/ },
+/* 20 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__vue_script__ = __webpack_require__(7)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] js/app.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(19)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) {
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	}
+	if (true) {(function () {  module.hot.accept()
+	  var hotAPI = __webpack_require__(18)
+	  hotAPI.install(__webpack_require__(4), false)
+	  if (!hotAPI.compatible) return
+	  var id = "_v-05a03e20/app.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 21 */
 /***/ function(module, exports) {
 
 	// shim for using process in browser
