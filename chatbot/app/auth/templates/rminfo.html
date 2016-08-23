@@ -3,9 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <title>Remove Info</title>
+        <link rel="stylesheet" type="text/css" href="http://127.0.0.1:5000/auth/static/hack.css">
+        <link rel="stylesheet" type="text/css" href="http://127.0.0.1:5000/auth/static/solarized-dark.css">
+        <link rel="stylesheet" type="text/css" href="http://127.0.0.1:5000/auth/static/auth.css">
     </head>
-    <body>
-        <h1>Remove Information</h1>
+    <body class="hack solarized-dark">
+        <header>Remove Information</header>
         <div>
             {% with messages = get_flashed_messages() %}
             {% if messages %}
@@ -18,27 +21,29 @@
             {% endwith %}
         </div>
         <div>
-            <form action="" method="post">
-                <div>
-                    <label>tag(existed collections:
+            <p>tag(existed collections:
                         {% for collection in collections %}
                             {% if collection != 'system.indexes' %}
                                 {{ collection }}&nbsp;
                             {% endif %}
                         {% endfor %}
-                        )
-                    </label>
-                    <input name="tag">
-                </div>
-                <div>
+                        )</p>
+            <form action="" method="post" class="form">
+                <fieldset class="form-group">
+                    <label>tag</label>
+                    <input name="tag" class="form-control">
+                </fieldset>
+                <fieldset class="form-group">
                     <label>index</label>
-                    <input name="index">
-                </div>
-                <div>
+                    <input name="index" class="form-control">
+                </fieldset>
+                <fieldset class="form-group">
                     <label>content</label>
-                    <input name="content">
+                    <input name="content" class="form-control">
+                </fieldset>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
                 </div>
-                <button type="submit">Submit</button>
             </form>
         </div>
     </body>

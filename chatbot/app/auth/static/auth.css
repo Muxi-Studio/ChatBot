@@ -1,0 +1,46 @@
+body{
+	padding: 50px;
+	text-align: center;
+}
+.hack{
+	font-family: Sans-serif;
+}
+div{
+	margin: 20 0px;
+}
+*{
+	font-size: 18px;
+	line-height: 30px;
+}
+header{
+	color: #1e88e5;
+	font-size: 40px;
+}
+form{
+	text-align:left;
+	margin: auto;
+}
+a{
+	width: 180px;
+	height: 50px;
+	line-height: 50px;
+	border-bottom: none;
+}
+p{
+	line-height: 40px;
+}
+.list{
+	text-align: left;
+}
+.btn_index{
+	margin: 20px;
+	width: 180px;
+	height: 50px;
+	padding: 0px;
+}
+.btn-box{
+	margin: 100px;
+}
+.addmargin{
+	margin: 30px 0;
+}

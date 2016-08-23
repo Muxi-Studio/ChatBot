@@ -3,9 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <title>Add to Dic</title>
+        <link rel="stylesheet" type="text/css" href="http://127.0.0.1:5000/auth/static/hack.css">
+        <link rel="stylesheet" type="text/css" href="http://127.0.0.1:5000/auth/static/solarized-dark.css">
+        <link rel="stylesheet" type="text/css" href="http://127.0.0.1:5000/auth/static/auth.css">
     </head>
-    <body>
-        <h1>Add to Dic</h1>
+    <body class="hack solarized-dark">
+        <header>Add to Dic</header>
         <div>
             {% with messages = get_flashed_messages() %}
             {% if messages %}
@@ -17,17 +20,19 @@
             {% endif %}
             {% endwith %}
         </div>
-        <div>
-            <form action="" method="post">
-                <div>
+        <div class="addmargin">
+            <form action="" method="post" class="form">
+                <fieldset class="form-group">
                     <label>Words:</label>
-                    <input name="words">
-                </div>
-                <div>
+                    <input name="words" class="form-control">
+                </fieldset>
+                <fieldset class="form-group">
                     <label>Types:</label>
-                    <input name="types">
+                    <input name="types" class="form-control">
+                </fieldset>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
                 </div>
-                <button type="submit">Submit</button>
             </form>
         </div>
     </body>
