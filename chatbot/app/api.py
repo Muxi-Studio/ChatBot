@@ -1,6 +1,8 @@
+
 # coding: utf-8
 from . import app, db
-from flask import Flask, jsonify, redirect, url_for
+from .replace import replace_word
+from flask import request, jsonify, redirect, url_for
 import re
 import jieba
 import jieba.analyse
@@ -8,25 +10,39 @@ import jieba.posseg
 import urllib2
 import urllib
 import json
+import random
+from collections import OrderedDict
 jieba.load_userdict("dic.txt")
 
 @app.route('/<text>', methods=['GET','POST'])
 def getcontent(text):
-    tag = 'unk'
-    keyword = None
-    content = None
-    keydict = {}
-    adict = {}
-    maplist = [u'在哪', u'哪儿', u'哪里', u'地图']
+    questionlist = []
+    if request.method == 'GET':
+        questions = db.question.find({'content':text})
+        for n in questions:
+            questionlist.append(n)
+        if questionlist == []:
+            db.question.insert({'tag':'question','content': text})
+        else:
+            pass
+    text = replace_word(text)
+    maplist = [u'在哪', u'哪儿', u'哪里', u'地图', u'怎么走', u'怎么去']
     weblist = [u'网址', u'网页', u'网站']
     txtlist = [u'通知', u'资料', u'公告']
     piclist = [u'照片', u'相片', u'图片']
+    tag = None
+    keyword = None
+    content = None
+    a = {}
+    alist = []
+    adict = {}
+    keydict = OrderedDict()
     text = text.decode("utf8")
     text = re.sub("[\s+\.\!\/_,$%^*(+\"\']+|[+——！，。？、~@#￥%……&*（）]+".decode("utf8"), "".decode("utf8"),text)
     keywords = jieba.analyse.extract_tags(text,10)
-    psegword = jieba.posseg.cut(text)
-    for n in psegword:
-        keydict[n.word] = n.flag
+    psegwords = jieba.posseg.cut(text)
+    for psegword in psegwords:
+        keydict[psegword.word] = psegword.flag
     if keywords != []:
         for i in weblist:
             if i in keywords:
@@ -35,9 +51,9 @@ def getcontent(text):
                 for j in keydict:
                     if keydict[j] == 'ns' or keydict[j] == 'nt' or keydict[j] == 'n' or keydict[j] == 'nr':
                         keyword = j
-                        adict = db.web.find({'index':keyword})
+                        a = db.web.find({'index':keyword})
                         break
-                for k in adict:
+                for k in a:
                     tag = k['tag']
                     content = k['content']
                     return jsonify({
@@ -51,11 +67,13 @@ def getcontent(text):
                 for j in keydict:
                     if keydict[j] == 'ns' or keydict[j] == 'nt' or keydict[j] == 'n' or keydict[j] == 'nr':
                         keyword = j
-                        adict = db.pic.find({'index': keyword})
+                        a = db.pic.find({'index': keyword})
+                        alist = [m for m in a]
                         break
-                for k in adict:
-                    tag = k['tag']
-                    content = k['content']
+                if alist != []:
+                    adict = random.choice(alist)
+                    tag = adict['tag']
+                    content = adict['content']
                     return jsonify({
                         'tag':tag,
                         'content':content
@@ -63,14 +81,11 @@ def getcontent(text):
         for i in maplist:
             if i in keywords:
                 tag = 'map'
-                for k in keywords:
-                    if k == '华中师范大学':
-                        del keydict[k]
                 for j in keydict:
                     if keydict[j] == 'ns' or keydict[j] == 'nt'  or keydict[j] == 'n' or keydict[j] == 'nr':
                         keyword = j
                         content = keyword
-                        return jsonify({
+                return jsonify({
                             'tag':tag,
                             'content':content
                         })
@@ -81,19 +96,23 @@ def getcontent(text):
             for j in keydict:
                 if keydict[j] == 'ns' or keydict[j] == 'nt'  or keydict[j] == 'n' or keydict[j] == 'nr':
                     keyword = j
-                    adict = db.txt.find({'index': keyword})
+                    a = db.txt.find({'index': keyword})
+                    alist = [m for m in a]
                     break
-            for k in adict:
-                tag = k['tag']
-                content = k['content']
+            if alist != []:
+                adict = random.choice(alist)
+                tag = adict['tag']
+                content = adict['content']
                 return jsonify({
                     'tag':tag,
                     'content':content
                 })
-    adict = db.txt.find({'index': text})
-    for k in adict:
-        tag = k['tag']
-        content = k['content']
+    a = db.txt.find({'index': text})
+    alist = [m for m in a]
+    if alist != []:
+        adict = random.choice(alist)
+        tag = adict['tag']
+        content = adict['content']
         return jsonify({
             'tag':tag,
             'content':content
