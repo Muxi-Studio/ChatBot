@@ -16,6 +16,8 @@ jieba.load_userdict("dic.txt")
 
 @app.route('/<text>', methods=['GET','POST'])
 def getcontent(text):
+    text = text.decode("utf8")
+    text = re.sub("[\s+\.\!\/_,$%^*(+\"\']+|[+——！，。？、~@#￥%……&*（）]+".decode("utf8"), "".decode("utf8"),text)
     questionlist = []
     if request.method == 'GET':
         questions = db.question.find({'content':text})
@@ -25,7 +27,6 @@ def getcontent(text):
             db.question.insert({'tag':'question','content': text})
         else:
             pass
-    text = replace_word(text)
     maplist = [u'在哪', u'哪儿', u'哪里', u'地图', u'怎么走', u'怎么去']
     weblist = [u'网址', u'网页', u'网站']
     txtlist = [u'通知', u'资料', u'公告']
@@ -37,8 +38,7 @@ def getcontent(text):
     alist = []
     adict = {}
     keydict = OrderedDict()
-    text = text.decode("utf8")
-    text = re.sub("[\s+\.\!\/_,$%^*(+\"\']+|[+——！，。？、~@#￥%……&*（）]+".decode("utf8"), "".decode("utf8"),text)
+    text = replace_word(text)
     keywords = jieba.analyse.extract_tags(text,10)
     psegwords = jieba.posseg.cut(text)
     for psegword in psegwords:

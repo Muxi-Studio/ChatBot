@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "c80425da3a0e9c158903"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "364cae3953ef99fa883b"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -11762,8 +11762,8 @@
 								mapcontent.setAttribute("id", mapid);
 								appendmap.appendChild(mapcontent);
 								var map = new BMap.Map(mapid);
-
-								map.centerAndZoom(get, 18);
+								var mappoint = '华中师范大学' + get;
+								map.centerAndZoom(mappoint, 18);
 							}
 						};
 
