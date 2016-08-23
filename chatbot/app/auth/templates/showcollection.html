@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <head>
     <title>Table {{ collection }}</title>
+        <link rel="stylesheet" type="text/css" href="http://127.0.0.1:5000/auth/static/hack.css">
+        <link rel="stylesheet" type="text/css" href="http://127.0.0.1:5000/auth/static/solarized-dark.css">
+        <link rel="stylesheet" type="text/css" href="http://127.0.0.1:5000/auth/static/auth.css">
 </head>
-<body>
-    <ul>
+<body class="hack solarized-dark list">
+    <ul style="font-size:15px;">
         {% if adict %}
             {% for i in adict %}
-            <li><b>tag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>{{ i['tag'] }}</li>
-            <span><b>index:&nbsp;&nbsp;&nbsp;</b>{{ i['index'] }}</span><br/>
-            <span><b>content: </b>{{ i['content'] }}</span>
+            <li style="color:white"><b>tag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>{{ i['tag'] }}</li>
+            <span style="color:white"><b>index:&nbsp;&nbsp;&nbsp;</b>{{ i['index'] }}</span><br/>
+            <span style="color:white"><b>content: </b>{{ i['content'] }}</span>
             </br></br>
             {% endfor %}
         {% else %}

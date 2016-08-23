@@ -3,9 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <title>Add Info</title>
+        <link rel="stylesheet" type="text/css" href="http://127.0.0.1:5000/auth/static/hack.css">
+        <link rel="stylesheet" type="text/css" href="http://127.0.0.1:5000/auth/static/solarized-dark.css">
+        <link rel="stylesheet" type="text/css" href="http://127.0.0.1:5000/auth/static/auth.css">       
     </head>
-    <body>
-        <h1>Add Information</h1>
+    <body class="hack solarized-dark">
+        <header>Add Information</header>
         <div>
             {% with messages = get_flashed_messages() %}
             {% if messages %}
@@ -18,28 +21,31 @@
             {% endwith %}
         </div>
         <div>
-            <form action="" method="post">
-                <div>
-                    <p>If you attempt to add documents to a collection that does not exist, MongoDB will create the collection for you.</p>
-                    <label>tag(existed collections:
-                        {% for collection in collections %}
-                            {% if collection != 'system.indexes' %}
-                                {{ collection }}&nbsp;
-                            {% endif %}
-                        {% endfor %}
-                        )
-                    </label>
-                    <input name="tag">
-                </div>
-                <div>
+            <p>If you attempt to add documents to a collection that does not exist<br>
+            MongoDB will create the collection for you.</p>
+            <p>tag(existed collections:
+                {% for collection in collections %}
+                    {% if collection != 'system.indexes' %}
+                        {{ collection }}&nbsp;
+                    {% endif %}
+                {% endfor %}
+                )</p>
+            <form action="" method="post" class="form">
+                <fieldset class="form-group">
+                    <label>tag</label>
+                    <input name="tag" class="form-control">
+                </fieldset>
+                <fieldset class="form-group">
                     <label>index</label>
-                    <input name="index">
-                </div>
-                <div>
+                    <input name="index" class="form-control">
+                </fieldset>
+                <fieldset class="form-group">
                     <label>content</label>
-                    <input name="content">
+                    <input name="content" class="form-control">
+                </fieldset>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary btn-block">提交</button>
                 </div>
-                <button type="submit">提交</button>
             </form>
         </div>
     </body>

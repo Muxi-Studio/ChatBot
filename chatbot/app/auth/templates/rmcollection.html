@@ -3,9 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <title>Remove Collection</title>
+        <link rel="stylesheet" type="text/css" href="http://127.0.0.1:5000/auth/static/hack.css">
+        <link rel="stylesheet" type="text/css" href="http://127.0.0.1:5000/auth/static/solarized-dark.css">
+        <link rel="stylesheet" type="text/css" href="http://127.0.0.1:5000/auth/static/auth.css">
     </head>
-    <body>
-        <h1>Remove Collection</h1>
+    <body class="hack solarized-dark">
+        <header>Remove Collection</header>
         <div>
             {% with messages = get_flashed_messages() %}
             {% if messages %}
@@ -17,23 +20,25 @@
             {% endif %}
             {% endwith %}
         </div>
-        <div>
-            <form action="" method="post">
-                <div>
-                    Existed collections:
-                        {% for collection in collections %}
-                            {% if collection != 'system.indexes' %}
-                            <div>
-                                {{ collection }}&nbsp;
-                            </div>
-                            {% endif %}
-                        {% endfor %}
+        <div class="addmargin">
+            <div class="addmargin">
+                Existed collections:
+                    {% for collection in collections %}
+                        {% if collection != 'system.indexes' %}
+                        <span>
+                            {{ collection }}&nbsp;
+                        </span>
+                        {% endif %}
+                    {% endfor %}
+            </div>
+            <form action="" method="post" class="form">
+                <fieldset class="form-group">
+                    <label>remove</label>
+                    <input name="rm_collection" class="form-control">
+                </fieldset>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
                 </div>
-                <div>
-                    <label>You wan't to drop:</label>
-                    <input name="rm_collection">
-                </div>
-                <button type="submit">Submit</button>
             </form>
         </div>
     </body>
