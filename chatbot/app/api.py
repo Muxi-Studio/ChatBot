@@ -24,7 +24,7 @@ def getcontent(text):
         for n in questions:
             questionlist.append(n)
         if questionlist == []:
-            db.question.insert({'tag':'question','content': text})
+            db.question.insert({'tag':'question','index': 'question','content': text})
         else:
             pass
     maplist = [u'在哪', u'哪儿', u'哪里', u'地图', u'怎么走', u'怎么去']
