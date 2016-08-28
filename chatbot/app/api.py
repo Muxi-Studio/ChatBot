@@ -28,7 +28,7 @@ def getcontent(text):
         else:
             pass
     maplist = [u'在哪', u'哪儿', u'哪里', u'地图', u'怎么走', u'怎么去']
-    weblist = [u'网址', u'网页', u'网站']
+    weblist = [u'网址', u'网页', u'网站', u'官网']
     txtlist = [u'通知', u'资料', u'公告']
     piclist = [u'照片', u'相片', u'图片']
     tag = None
