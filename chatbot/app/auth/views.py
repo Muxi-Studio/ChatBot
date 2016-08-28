@@ -95,3 +95,9 @@ def addtodic():
             flash("Please complete the blanks!")
         return redirect(url_for('auth.addtodic'))
     return render_template('addtodic.html')
+
+@auth.route('/backup/', methods=['GET', 'POST'])
+def backup():
+    os.system('cd /usr/local/mongodb/bin;./mongodump -h {h} -d chatbot -o {o}'.format(h=os.environ.get('MONGODB_URL'),o=os.getcwd()+'/mongodump'))
+    flash("DB has been dumped!")
+    return redirect(url_for('auth.index'))

@@ -9,6 +9,17 @@
     </head>
     <body class="hack solarized-dark">
         <header>All The Collections</header>
+        <div>
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul class=flashes>
+                {% for message in messages %}
+                <li>{{ message }}</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+            {% endwith %}
+        </div>
         <div class="btn-box">
             {% for collection in collections %}
                 {% if collection != 'system.indexes' %}
@@ -29,6 +40,9 @@
             </button>
             <button class="btn_index btn btn-primary btn-ghost">
                 <a href="{{ url_for('auth.addtodic') }}">Add to Dic</a>
+            </button>
+            <button class="btn_index btn btn-primary btn-ghost">
+                <a href="{{ url_for('auth.backup') }}">Backup DB</a>
             </button>
         </div>
     </body>
