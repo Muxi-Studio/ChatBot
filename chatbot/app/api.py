@@ -51,14 +51,13 @@ def getcontent(text):
                     a = db.web.find({'index':keyword})
                     alist = [m for m in a]
                     if alist != []:
-                        break
-                for k in a:
-                    tag = k['tag']
-                    content = k['content']
-                    return jsonify({
-                        'tag':tag,
-                        'content':content
-                    })
+                        adict = random.choice(alist)
+                        tag = adict['tag']
+                        content = adict['content']
+                        return jsonify({
+                            'tag':tag,
+                            'content':content
+                        })
         for i in piclist:
             if i in keywords:
                 tag = 'pic'
