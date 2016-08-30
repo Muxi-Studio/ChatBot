@@ -25,8 +25,6 @@ def getcontent(text):
             questionlist.append(n)
         if questionlist == []:
             db.question.insert({'tag':'question','index': 'question','content': text})
-        else:
-            pass
     maplist = [u'在哪', u'哪儿', u'哪里', u'地图', u'怎么走', u'怎么去']
     weblist = [u'网址', u'网页', u'网站', u'官网']
     txtlist = [u'通知', u'资料', u'公告']
@@ -49,9 +47,10 @@ def getcontent(text):
                 tag = 'web'
                 del keydict[i]
                 for j in keydict:
-                    if keydict[j] == 'ns' or keydict[j] == 'nt' or keydict[j] == 'n' or keydict[j] == 'nr':
-                        keyword = j
-                        a = db.web.find({'index':keyword})
+                    keyword = j
+                    a = db.web.find({'index':keyword})
+                    alist = [m for m in a]
+                    if alist != []:
                         break
                 for k in a:
                     tag = k['tag']
@@ -65,19 +64,17 @@ def getcontent(text):
                 tag = 'pic'
                 del keydict[i]
                 for j in keydict:
-                    if keydict[j] == 'ns' or keydict[j] == 'nt' or keydict[j] == 'n' or keydict[j] == 'nr':
-                        keyword = j
-                        a = db.pic.find({'index': keyword})
-                        alist = [m for m in a]
-                        break
-                if alist != []:
-                    adict = random.choice(alist)
-                    tag = adict['tag']
-                    content = adict['content']
-                    return jsonify({
-                        'tag':tag,
-                        'content':content
-                    })
+                    keyword = j
+                    a = db.pic.find({'index': keyword})
+                    alist = [m for m in a]
+                    if alist != []:
+                        adict = random.choice(alist)
+                        tag = adict['tag']
+                        content = adict['content']
+                        return jsonify({
+                            'tag':tag,
+                            'content':content
+                        })
         for i in maplist:
             if i in keywords:
                 tag = 'map'
@@ -86,27 +83,25 @@ def getcontent(text):
                         keyword = j
                         content = keyword
                 return jsonify({
-                            'tag':tag,
-                            'content':content
-                        })
+                    'tag':tag,
+                    'content':content
+                })
         for i in txtlist:
             tag = 'txt'
             if i in keywords:
                 del keydict[i]
             for j in keydict:
-                if keydict[j] == 'ns' or keydict[j] == 'nt'  or keydict[j] == 'n' or keydict[j] == 'nr':
-                    keyword = j
-                    a = db.txt.find({'index': keyword})
-                    alist = [m for m in a]
-                    break
-            if alist != []:
-                adict = random.choice(alist)
-                tag = adict['tag']
-                content = adict['content']
-                return jsonify({
-                    'tag':tag,
-                    'content':content
-                })
+                keyword = j
+                a = db.txt.find({'index': keyword})
+                alist = [m for m in a]
+                if alist != []:
+                    adict = random.choice(alist)
+                    tag = adict['tag']
+                    content = adict['content']
+                    return jsonify({
+                        'tag':tag,
+                        'content':content
+                    })
     a = db.txt.find({'index': text})
     alist = [m for m in a]
     if alist != []:
