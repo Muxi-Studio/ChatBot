@@ -77,13 +77,10 @@ def getcontent(text):
         for i in maplist:
             if i in keywords:
                 tag = 'map'
-                for j in keydict:
-                    if keydict[j] == 'ns' or keydict[j] == 'nt'  or keydict[j] == 'n' or keydict[j] == 'nr':
-                        keyword = j
-                        content = keyword
+                keyword = '华中师范大学'
                 return jsonify({
                     'tag':tag,
-                    'content':content
+                    'content':keyword
                 })
         for i in txtlist:
             tag = 'txt'
